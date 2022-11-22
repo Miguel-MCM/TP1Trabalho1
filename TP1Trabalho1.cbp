@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="dominios.cpp" />
+		<Unit filename="dominios.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
