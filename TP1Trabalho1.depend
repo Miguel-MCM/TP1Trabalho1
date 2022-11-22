@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1669124873 source:c:\users\rabel\onedrive\햞ea de trabalho\tp1trabalho1\main.cpp
+1669146918 source:c:\users\rabel\onedrive\햞ea de trabalho\tp1trabalho1\main.cpp
 	<iostream>
 	"dominios.h"
 
-1669125463 source:c:\users\rabel\onedrive\햞ea de trabalho\tp1trabalho1\dominios.cpp
+1669147031 source:c:\users\rabel\onedrive\햞ea de trabalho\tp1trabalho1\dominios.cpp
 	"dominios.h"
 
-1669125359 c:\users\rabel\onedrive\햞ea de trabalho\tp1trabalho1\dominios.h
+1669142092 c:\users\rabel\onedrive\햞ea de trabalho\tp1trabalho1\dominios.h
 	<iostream>
 	<stdexcept>
 	<string.h>

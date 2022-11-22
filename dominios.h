@@ -10,11 +10,11 @@ using namespace std;
 class Dominio
 {
     protected:
-        static int count_char(string, string);
         string valor;
         virtual void validar(string) = 0;
-
     public:
+        static int countChar(string, string);
+        static string formatarInt(int, int);
         string getValor();
         void setValor(string);
 };
@@ -28,16 +28,17 @@ class Data:public Dominio {
     private:
         static const int SIZE = 8;
         void validar(string);
-        static int incrFeb(string);
     public:
+        static int incrFeb(string);
         string getDia(), getMes(), getAno();
         static string getDia(string), getMes(string), getAno(string);
-        void setData(string);
+        void setData(string), setData(string, string, string), setData(int, int, int);
         static int isLeapYear(int);
         static int isLeapYear(string);
         int isLeapYear();
         Data(string);
         Data(string, string, string);
+        Data(int, int, int);
 };
 
 inline string Data::getDia() {
