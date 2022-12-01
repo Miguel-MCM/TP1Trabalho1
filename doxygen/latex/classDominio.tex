@@ -1,0 +1,92 @@
+\hypertarget{classDominio}{}\doxysection{Dominio Class Reference}
+\label{classDominio}\index{Dominio@{Dominio}}
+
+
+{\ttfamily \#include $<$Dominios.\+h$>$}
+
+Inheritance diagram for Dominio\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDominio}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classDominio_adc86858ec8f9d7d91a0d8498f3614864}{get\+Valor}} () const
+\item 
+void \mbox{\hyperlink{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}{set\+Valor}} (string \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classDominio_a4df4d32136bed877313a4e2fb6374bb2}{validar}} (string \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}})=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe abstrata, cujo principal atributo é uma string. Essa classe serve como base para todas as outras classes de domínios do sistema. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDominio_adc86858ec8f9d7d91a0d8498f3614864}\label{classDominio_adc86858ec8f9d7d91a0d8498f3614864}} 
+\index{Dominio@{Dominio}!getValor@{getValor}}
+\index{getValor@{getValor}!Dominio@{Dominio}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily string Dominio\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retorna a string, com formatação válida, armazenada em valor \begin{DoxyReturn}{Returns}
+-\/string valor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}\label{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}} 
+\index{Dominio@{Dominio}!setValor@{setValor}}
+\index{setValor@{setValor}!Dominio@{Dominio}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Dominio\+::set\+Valor (\begin{DoxyParamCaption}\item[{string}]{valor }\end{DoxyParamCaption})}
+
+Armazena o valor da string passada no atributo valor se a string seguir corretamente as regras de formatação da classe. 
+\begin{DoxyParams}{Parameters}
+{\em -\/string} & valor\+: string que se quer armazenar no atributo, esse valor deve seguir as regras de formatação da classe \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em -\/invalid\+\_\+argument} & \+: se o valor passado não cumprir as regras de formatção \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classDominio_a4df4d32136bed877313a4e2fb6374bb2}\label{classDominio_a4df4d32136bed877313a4e2fb6374bb2}} 
+\index{Dominio@{Dominio}!validar@{validar}}
+\index{validar@{validar}!Dominio@{Dominio}}
+\doxysubsubsection{\texorpdfstring{validar()}{validar()}}
+{\footnotesize\ttfamily virtual void Dominio\+::validar (\begin{DoxyParamCaption}\item[{string}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Função que recebe uma string e avalia se ela cumpre as regras de formatação da classe, se elas não forem cumpridas lança uma exceção invalid\+\_\+argument. 
+\begin{DoxyParams}{Parameters}
+{\em -\/string} & valor\+: string que será avaliada. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em -\/invalid\+\_\+argumet} & se a string passada não seguir a formatação apropriada para a classe \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}\label{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}} 
+\index{Dominio@{Dominio}!valor@{valor}}
+\index{valor@{valor}!Dominio@{Dominio}}
+\doxysubsubsection{\texorpdfstring{valor}{valor}}
+{\footnotesize\ttfamily string Dominio\+::valor\hspace{0.3cm}{\ttfamily [protected]}}
+
+Atributo principal da classe. ~\newline
+ É uma string que sempre está seguindo a formatação definida pela classe. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/miguel/\+Documents/3\+Semestre/\+TP1/\+Trab1/include/Dominios.\+h\item 
+/home/miguel/\+Documents/3\+Semestre/\+TP1/\+Trab1/src/Dominios.\+cpp\end{DoxyCompactItemize}

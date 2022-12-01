@@ -1,0 +1,18 @@
+#include <iostream>
+
+#include "Dominios.h"
+
+using namespace std;
+
+int main()
+{
+    Texto a;
+    a.setValor("1234567890- ? ! ");
+    cout << a.getValor();
+    return 1;
+    
+    Codigo m = Codigo();
+m.setValor("12016112273");
+cout << m.getValor();
+return 0;
+}

@@ -1,0 +1,43 @@
+\hypertarget{Dominios_8h_source}{}\doxysection{Dominios.\+h}
+\label{Dominios_8h_source}\index{/home/miguel/Documents/3Semestre/TP1/Trab1/include/Dominios.h@{/home/miguel/Documents/3Semestre/TP1/Trab1/include/Dominios.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef DOMINIOS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define DOMINIOS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classDominio}{Dominio}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{14         \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}};}
+\DoxyCodeLine{18         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classDominio_a4df4d32136bed877313a4e2fb6374bb2}{validar}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}}) = 0;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{public}:}
+\DoxyCodeLine{23         \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adc86858ec8f9d7d91a0d8498f3614864}{getValor}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{27         \textcolor{keywordtype}{void} \mbox{\hyperlink{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}{setValor}}( \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}} );}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{inline} \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adc86858ec8f9d7d91a0d8498f3614864}{Dominio::getValor}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{31     \textcolor{keywordflow}{return} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}};}
+\DoxyCodeLine{32 \}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{37 \textcolor{keyword}{class }\mbox{\hyperlink{classDisciplina}{Disciplina}}:\textcolor{keyword}{public} \mbox{\hyperlink{classDominio}{Dominio}} \{}
+\DoxyCodeLine{38     \textcolor{keyword}{private}:}
+\DoxyCodeLine{39         \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{51 \textcolor{keyword}{class }\mbox{\hyperlink{classTexto}{Texto}}:\textcolor{keyword}{public} \mbox{\hyperlink{classDominio}{Dominio}} \{}
+\DoxyCodeLine{52     \textcolor{keyword}{private}:}
+\DoxyCodeLine{53         \textcolor{keywordtype}{bool} pontuacoesEmSequencia(\textcolor{keyword}{const} \textcolor{keywordtype}{string} pontuacoes, \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
+\DoxyCodeLine{54         \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
+\DoxyCodeLine{55         \textcolor{keywordtype}{bool} charEmSequencia(\textcolor{keywordtype}{char} carac, \textcolor{keywordtype}{string} str);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DOMINIOS\_H}}
+
+\end{DoxyCode}
