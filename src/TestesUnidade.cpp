@@ -82,7 +82,7 @@ void TUData::setUp() {
 void TUNome::setUp() {
     VALOR_VALIDO = new const string("Neymar Jr");
     VALOR_INVALIDO = new const string("cRISTIANO rONALDO");
-    dominio = new Nome;
+    dominio = new Nome("Alberto");
     estado = true;
 }
 

@@ -270,3 +270,7 @@ void Nome::validar(string nome) {
         throw invalid_argument("Mais de 2 sobrenomes");
     }
 }
+
+Nome::Nome(string nome) {
+    this->setValor(nome);
+}

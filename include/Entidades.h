@@ -69,19 +69,33 @@ inline Disciplina Tarefa::getDisciplina() const{
     return disciplina;
 }
 
+///Um projeto é um esforço temporário que tem como finalidade um resultado único e possui recursos delimitados; é identificado no sistema por um código, e possui um nome e uma descrição.
 class Projeto {
     private:
             Texto nome;
             Codigo codigo;
             Texto descricao;
     public:
+            /// @brief Armazena o nome do Projeto caso o parâmetro passado seguir corretamente a formatação do domínio Texto.
+            /// @param -Texto nome
+            /// @throw -invalid_argument : se o valor passado não cumprir as regras de formatação
             void setNome(const Texto&);
+            /// @brief Retorna o nome do Projeto.
+            /// @return -Texto nome
             Texto getNome() const;
-
+            /// @brief Armazena o código do Projeto caso o parâmetro passado seguir corretamente a formatação do domínio Código.
+            /// @param -Codigo codigo
+            /// @throw -invalid_argument : se o valor passado não cumprir as regras de formatação
             void setCodigo(const Codigo&);
+            /// @brief Retorna o código do Projeto.
+            /// @return -Codigo codigo
             Codigo getCodigo() const;
-
+            /// @brief Armazena a descrição do Projeto caso o parâmetro passado seguir corretamente a formatação do domínio Texto.
+            /// @param -Texto descricao
+            /// @throw -invalid_argument : se o valor passado não cumprir as regras de formatação
             void setDescricao(const Texto&);
+            /// @brief Retorna a descrição do Projeto.
+            /// @return -Texto descricao
             Texto getDescricao() const;
 };
 

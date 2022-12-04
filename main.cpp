@@ -10,60 +10,60 @@ int main()
     TUDisciplina t_u_disciplina;
     cout << "Teste Unidade Disciplina: ";
     if (t_u_disciplina.run())
-        cout << "SUCESSO." << endl;
+        cout << "\tSUCESSO." << endl;
     else
-        cout << "FRACASSO" << endl;
+        cout << "\tFRACASSO" << endl;
 
     TUTexto t_u_texto;
-    cout << "Teste Unidade Texto: ";
+    cout << "Teste Unidade Texto:\t ";
     if (t_u_texto.run())
-        cout << "SUCESSO." << endl;
+        cout << "\tSUCESSO." << endl;
     else
-        cout << "FRACASSO" << endl;
+        cout << "\tFRACASSO" << endl;
 
     TUCodigo t_u_codigo;
-    cout << "Teste Unidade Codigo: ";
+    cout << "Teste Unidade Codigo:\t";
     if (t_u_codigo.run())
-        cout << "SUCESSO." << endl;
+        cout << "\tSUCESSO." << endl;
     else
-        cout << "FRACASSO" << endl;
+        cout << "\tFRACASSO" << endl;
 
     TUMatricula t_u_matricula;
     cout << "Teste Unidade Matricula: ";
     if (t_u_matricula.run())
-        cout << "SUCESSO." << endl;
+        cout << "\tSUCESSO." << endl;
     else
-        cout << "FRACASSO" << endl;
+        cout << "\tFRACASSO" << endl;
 
     TUSenha t_u_senha;
-    cout << "Teste Unidade Senha: ";
+    cout << "Teste Unidade Senha:\t";
     if (t_u_senha.run())
-        cout << "SUCESSO." << endl;
+        cout << "\tSUCESSO." << endl;
     else
-        cout << "FRACASSO" << endl;
+        cout << "\tFRACASSO" << endl;
 
     TUData t_u_data;
-    cout << "Teste Unidade Data: ";
+    cout << "Teste Unidade Data:\t";
     if (t_u_data.run())
-        cout << "SUCESSO." << endl;
+        cout << "\tSUCESSO." << endl;
     else
-        cout << "FRACASSO" << endl;
+        cout << "\tFRACASSO" << endl;
 
     TUNome t_u_nome;
-    cout << "Teste Unidade Nome: ";
+    cout << "Teste Unidade Nome:\t";
     if (t_u_nome.run())
-        cout << "SUCESSO." << endl;
+        cout << "\tSUCESSO." << endl;
     else
-        cout << "FRACASSO" << endl;
+        cout << "\tFRACASSO" << endl;
 
     cout << endl;
 
     TUProjeto t_u_projeto;
-    cout << "Teste Unidade Projeto: ";
+    cout << "Teste Unidade Projeto: \t";
     if (t_u_projeto.run())
-        cout << "SUCESSO" << endl;
+        cout << "\tSUCESSO." << endl;
     else
-        cout << "FRACASSO" << endl;
+        cout << "\tFRACASSO." << endl;
 
     return 0;
 }

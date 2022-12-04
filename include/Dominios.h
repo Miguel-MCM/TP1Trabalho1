@@ -158,10 +158,25 @@ inline string Data::getAno(string data) {
     return "20" + data.substr(6, 2);
 }
 
+/// @brief Conjunto de caracteres que são uma forma alternativa de identificação do usuário.
+/// @details <ul>
+/// <li>Nome é composto por prenome e até dois sobrenomes.</li>
+/// <li>Texto (prenome mais sobrenomes e espaços em branco) é composto por total de até 20 caracteres.</li>
+/// <li>Cada caractere é letra (A-Z a-z) ou espaço em branco.</li>
+/// <li>Primeira letra de prenome ou de sobrenome é maiúscula (A-Z) e as outras são minúsculas (a-z).</li>
+/// <li>Não há espaços em branco em sequência.</li>
+/// <li>Acentuação pode ser desconsiderada.</li>
+/// </ul>
+
 class Nome:public Dominio {
     private:
         void validar(string);
 
+    public:
+        /// Construtor padrão, recebe uma string e, após validar, a armazena no atributo valor.
+        /// @param string nome
+
+        Nome(string);
 };
 
 #endif // DOMINIOS_H

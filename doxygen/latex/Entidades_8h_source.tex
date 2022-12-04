@@ -2,12 +2,155 @@
 \label{Entidades_8h_source}\index{/home/miguel/Documents/3Semestre/TP1/Trab1/include/Entidades.h@{/home/miguel/Documents/3Semestre/TP1/Trab1/include/Entidades.h}}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ENTIDADES\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ENTIDADES\_H}}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ENTIDADES\_H\_INCLUDED}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ENTIDADES\_H\_INCLUDED}}
 \DoxyCodeLine{3 }
-\DoxyCodeLine{4 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Dominios.h"{}}}
 \DoxyCodeLine{5 }
-\DoxyCodeLine{6 }
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ENTIDADES\_H}}
+\DoxyCodeLine{6 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{classTarefa}{Tarefa}} \{}
+\DoxyCodeLine{9     \textcolor{keyword}{private}:}
+\DoxyCodeLine{10             \mbox{\hyperlink{classTexto}{Texto}} nome;}
+\DoxyCodeLine{11             \mbox{\hyperlink{classCodigo}{Codigo}} codigo;}
+\DoxyCodeLine{12             \mbox{\hyperlink{classData}{Data}} inicio;}
+\DoxyCodeLine{13             \mbox{\hyperlink{classData}{Data}} termino;}
+\DoxyCodeLine{14             \mbox{\hyperlink{classDisciplina}{Disciplina}} disciplina;}
+\DoxyCodeLine{15     \textcolor{keyword}{public}:}
+\DoxyCodeLine{16             \textcolor{keywordtype}{void} setNome(\textcolor{keyword}{const} \mbox{\hyperlink{classTexto}{Texto}}\&);}
+\DoxyCodeLine{17             \mbox{\hyperlink{classTexto}{Texto}} getNome() \textcolor{keyword}{const};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19             \textcolor{keywordtype}{void} setCodigo(\textcolor{keyword}{const} \mbox{\hyperlink{classCodigo}{Codigo}}\&);}
+\DoxyCodeLine{20             \mbox{\hyperlink{classCodigo}{Codigo}} getCodigo() \textcolor{keyword}{const};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22             \textcolor{keywordtype}{void} setInicio(\textcolor{keyword}{const} \mbox{\hyperlink{classData}{Data}}\&);}
+\DoxyCodeLine{23             \mbox{\hyperlink{classData}{Data}} getInicio() \textcolor{keyword}{const};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25             \textcolor{keywordtype}{void} setTermino(\textcolor{keyword}{const} \mbox{\hyperlink{classData}{Data}}\&);}
+\DoxyCodeLine{26             \mbox{\hyperlink{classData}{Data}} getTermino() \textcolor{keyword}{const};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28             \textcolor{keywordtype}{void} setDisciplina(\textcolor{keyword}{const} \mbox{\hyperlink{classDisciplina}{Disciplina}}\&);}
+\DoxyCodeLine{29             \mbox{\hyperlink{classDisciplina}{Disciplina}} getDisciplina() \textcolor{keyword}{const};}
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} Tarefa::setNome(\textcolor{keyword}{const} \mbox{\hyperlink{classTexto}{Texto}} \&nome)\{}
+\DoxyCodeLine{33     this-\/>nome = nome;}
+\DoxyCodeLine{34 \}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{inline} \mbox{\hyperlink{classTexto}{Texto}} Tarefa::getNome()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{37     \textcolor{keywordflow}{return} nome;}
+\DoxyCodeLine{38 \}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} Tarefa::setCodigo(\textcolor{keyword}{const} \mbox{\hyperlink{classCodigo}{Codigo}} \&codigo)\{}
+\DoxyCodeLine{41     this-\/>codigo = codigo;}
+\DoxyCodeLine{42 \}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{inline} \mbox{\hyperlink{classCodigo}{Codigo}} Tarefa::getCodigo()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{45     \textcolor{keywordflow}{return} codigo;}
+\DoxyCodeLine{46 \}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} Tarefa::setInicio(\textcolor{keyword}{const} \mbox{\hyperlink{classData}{Data}} \&inicio)\{}
+\DoxyCodeLine{49     this-\/>inicio = inicio;}
+\DoxyCodeLine{50 \}}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{keyword}{inline} \mbox{\hyperlink{classData}{Data}} Tarefa::getInicio()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{53     \textcolor{keywordflow}{return} inicio;}
+\DoxyCodeLine{54 \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} Tarefa::setTermino(\textcolor{keyword}{const} \mbox{\hyperlink{classData}{Data}} \&termino)\{}
+\DoxyCodeLine{57     this-\/>termino = termino;}
+\DoxyCodeLine{58 \}}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{keyword}{inline} \mbox{\hyperlink{classData}{Data}} Tarefa::getTermino()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{61     \textcolor{keywordflow}{return} termino;}
+\DoxyCodeLine{62 \}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} Tarefa::setDisciplina(\textcolor{keyword}{const} \mbox{\hyperlink{classDisciplina}{Disciplina}} \&disciplina)\{}
+\DoxyCodeLine{65     this-\/>disciplina = disciplina;}
+\DoxyCodeLine{66 \}}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{keyword}{inline} \mbox{\hyperlink{classDisciplina}{Disciplina}} Tarefa::getDisciplina()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{69     \textcolor{keywordflow}{return} disciplina;}
+\DoxyCodeLine{70 \}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{73 \textcolor{keyword}{class }\mbox{\hyperlink{classProjeto}{Projeto}} \{}
+\DoxyCodeLine{74     \textcolor{keyword}{private}:}
+\DoxyCodeLine{75             \mbox{\hyperlink{classTexto}{Texto}} nome;}
+\DoxyCodeLine{76             \mbox{\hyperlink{classCodigo}{Codigo}} codigo;}
+\DoxyCodeLine{77             \mbox{\hyperlink{classTexto}{Texto}} descricao;}
+\DoxyCodeLine{78     \textcolor{keyword}{public}:}
+\DoxyCodeLine{82             \textcolor{keywordtype}{void} \mbox{\hyperlink{classProjeto_ac33a12a558a5ced45b614aaedbb38c26}{setNome}}(\textcolor{keyword}{const} \mbox{\hyperlink{classTexto}{Texto}}\&);}
+\DoxyCodeLine{85             \mbox{\hyperlink{classTexto}{Texto}} \mbox{\hyperlink{classProjeto_ae5301064d20f054eca74fe0aad4bc3da}{getNome}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{89             \textcolor{keywordtype}{void} \mbox{\hyperlink{classProjeto_a7474ab46180b997142a9497104dee87f}{setCodigo}}(\textcolor{keyword}{const} \mbox{\hyperlink{classCodigo}{Codigo}}\&);}
+\DoxyCodeLine{92             \mbox{\hyperlink{classCodigo}{Codigo}} \mbox{\hyperlink{classProjeto_a5d9c3bb6177e5c62176347461bd620a3}{getCodigo}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{96             \textcolor{keywordtype}{void} \mbox{\hyperlink{classProjeto_aa5b9d3c4894850e326b3c3e28a9670d7}{setDescricao}}(\textcolor{keyword}{const} \mbox{\hyperlink{classTexto}{Texto}}\&);}
+\DoxyCodeLine{99             \mbox{\hyperlink{classTexto}{Texto}} \mbox{\hyperlink{classProjeto_a600487ea6215134c7035454139cfd348}{getDescricao}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{100 \};}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{classProjeto_ac33a12a558a5ced45b614aaedbb38c26}{Projeto::setNome}}(\textcolor{keyword}{const} \mbox{\hyperlink{classTexto}{Texto}} \&nome)\{}
+\DoxyCodeLine{103     this-\/>nome = nome;}
+\DoxyCodeLine{104 \}}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106 \textcolor{keyword}{inline} \mbox{\hyperlink{classTexto}{Texto}} \mbox{\hyperlink{classProjeto_ae5301064d20f054eca74fe0aad4bc3da}{Projeto::getNome}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{107     \textcolor{keywordflow}{return} nome;}
+\DoxyCodeLine{108 \}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{classProjeto_a7474ab46180b997142a9497104dee87f}{Projeto::setCodigo}}(\textcolor{keyword}{const} \mbox{\hyperlink{classCodigo}{Codigo}} \&codigo)\{}
+\DoxyCodeLine{111     this-\/>codigo = codigo;}
+\DoxyCodeLine{112 \}}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 \textcolor{keyword}{inline} \mbox{\hyperlink{classCodigo}{Codigo}} \mbox{\hyperlink{classProjeto_a5d9c3bb6177e5c62176347461bd620a3}{Projeto::getCodigo}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{115     \textcolor{keywordflow}{return} codigo;}
+\DoxyCodeLine{116 \}}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{classProjeto_aa5b9d3c4894850e326b3c3e28a9670d7}{Projeto::setDescricao}}(\textcolor{keyword}{const} \mbox{\hyperlink{classTexto}{Texto}} \&descricao)\{}
+\DoxyCodeLine{119     this-\/>descricao = descricao;}
+\DoxyCodeLine{120 \}}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 \textcolor{keyword}{inline} \mbox{\hyperlink{classTexto}{Texto}} \mbox{\hyperlink{classProjeto_a600487ea6215134c7035454139cfd348}{Projeto::getDescricao}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{123     \textcolor{keywordflow}{return} descricao;}
+\DoxyCodeLine{124 \}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126 \textcolor{keyword}{class }\mbox{\hyperlink{classUsuario}{Usuario}} \{}
+\DoxyCodeLine{127     \textcolor{keyword}{private}:}
+\DoxyCodeLine{128             \mbox{\hyperlink{classNome}{Nome}} nome;}
+\DoxyCodeLine{129             \mbox{\hyperlink{classMatricula}{Matricula}} matricula;}
+\DoxyCodeLine{130             \mbox{\hyperlink{classSenha}{Senha}} senha;}
+\DoxyCodeLine{131     \textcolor{keyword}{public}:}
+\DoxyCodeLine{132             \textcolor{keywordtype}{void} setNome(\textcolor{keyword}{const} \mbox{\hyperlink{classNome}{Nome}}\&);}
+\DoxyCodeLine{133             \mbox{\hyperlink{classNome}{Nome}} getNome() \textcolor{keyword}{const};}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135             \textcolor{keywordtype}{void} setMatricula(\textcolor{keyword}{const} \mbox{\hyperlink{classMatricula}{Matricula}}\&);}
+\DoxyCodeLine{136             \mbox{\hyperlink{classMatricula}{Matricula}} getMatricula() \textcolor{keyword}{const};}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138             \textcolor{keywordtype}{void} setSenha(\textcolor{keyword}{const} \mbox{\hyperlink{classSenha}{Senha}}\&);}
+\DoxyCodeLine{139             \mbox{\hyperlink{classSenha}{Senha}} getSenha() \textcolor{keyword}{const};}
+\DoxyCodeLine{140 \};}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} Usuario::setNome(\textcolor{keyword}{const} \mbox{\hyperlink{classNome}{Nome}} \&nome)\{}
+\DoxyCodeLine{143     this-\/>nome = nome;}
+\DoxyCodeLine{144 \}}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146 \textcolor{keyword}{inline} \mbox{\hyperlink{classNome}{Nome}} Usuario::getNome()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{147     \textcolor{keywordflow}{return} nome;}
+\DoxyCodeLine{148 \}}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} Usuario::setMatricula(\textcolor{keyword}{const} \mbox{\hyperlink{classMatricula}{Matricula}} \&matricula)\{}
+\DoxyCodeLine{151     this-\/>matricula = matricula;}
+\DoxyCodeLine{152 \}}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154 \textcolor{keyword}{inline} \mbox{\hyperlink{classMatricula}{Matricula}} Usuario::getMatricula()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{155     \textcolor{keywordflow}{return} matricula;}
+\DoxyCodeLine{156 \}}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158 \textcolor{keyword}{inline} \textcolor{keywordtype}{void} Usuario::setSenha(\textcolor{keyword}{const} \mbox{\hyperlink{classSenha}{Senha}} \&senha)\{}
+\DoxyCodeLine{159     this-\/>senha = senha;}
+\DoxyCodeLine{160 \}}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162 \textcolor{keyword}{inline} \mbox{\hyperlink{classSenha}{Senha}} Usuario::getSenha()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{163     \textcolor{keywordflow}{return} senha;}
+\DoxyCodeLine{164 \}}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ENTIDADES\_H\_INCLUDED}}
 
 \end{DoxyCode}

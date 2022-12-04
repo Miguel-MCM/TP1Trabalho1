@@ -1,5 +1,14 @@
 \hypertarget{classNome}{}\doxysection{Nome Class Reference}
 \label{classNome}\index{Nome@{Nome}}
+
+
+Conjunto de caracteres que são uma forma alternativa de identificação do usuário.  
+
+
+
+
+{\ttfamily \#include $<$Dominios.\+h$>$}
+
 Inheritance diagram for Nome\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -8,6 +17,8 @@ Inheritance diagram for Nome\+:\begin{figure}[H]
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNome_a5a31c8dec7272e90a3d5cb59cece8c28}{Nome}} (string)
 \item 
 string \mbox{\hyperlink{classDominio_adc86858ec8f9d7d91a0d8498f3614864}{get\+Valor}} () const
 \begin{DoxyCompactList}\small\item\em Retorna a string, com formatação válida, armazenada em valor. \end{DoxyCompactList}\item 
@@ -20,6 +31,33 @@ void \mbox{\hyperlink{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}{set\+Valor
 string {\bfseries valor}
 \begin{DoxyCompactList}\small\item\em Atributo principal da classe. ~\newline
  É uma string que sempre está seguindo a formatação definida pela classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Conjunto de caracteres que são uma forma alternativa de identificação do usuário. 
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{classNome}{Nome}} é composto por prenome e até dois sobrenomes. 
+\item \mbox{\hyperlink{classTexto}{Texto}} (prenome mais sobrenomes e espaços em branco) é composto por total de até 20 caracteres. 
+\item Cada caractere é letra (A-\/Z a-\/z) ou espaço em branco. 
+\item Primeira letra de prenome ou de sobrenome é maiúscula (A-\/Z) e as outras são minúsculas (a-\/z). 
+\item Não há espaços em branco em sequência. 
+\item Acentuação pode ser desconsiderada. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNome_a5a31c8dec7272e90a3d5cb59cece8c28}\label{classNome_a5a31c8dec7272e90a3d5cb59cece8c28}} 
+\index{Nome@{Nome}!Nome@{Nome}}
+\index{Nome@{Nome}!Nome@{Nome}}
+\doxysubsubsection{\texorpdfstring{Nome()}{Nome()}}
+{\footnotesize\ttfamily Nome\+::\+Nome (\begin{DoxyParamCaption}\item[{string}]{ }\end{DoxyParamCaption})}
+
+Construtor padrão, recebe uma string e, após validar, a armazena no atributo valor. 
+\begin{DoxyParams}{Parameters}
+{\em string} & nome \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}

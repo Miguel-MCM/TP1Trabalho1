@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1670188168 source:/home/miguel/Documents/3Semestre/TP1/Trab1/src/Dominios.cpp
+1670190090 source:/home/miguel/Documents/3Semestre/TP1/Trab1/src/Dominios.cpp
 	"Dominios.h"
 	<stdexcept>
 	<ctype.h>
 
-1670188648 /home/miguel/Documents/3Semestre/TP1/Trab1/include/Dominios.h
+1670190137 /home/miguel/Documents/3Semestre/TP1/Trab1/include/Dominios.h
 	<string>
 
-1670186886 source:/home/miguel/Documents/3Semestre/TP1/Trab1/main.cpp
+1670190287 source:/home/miguel/Documents/3Semestre/TP1/Trab1/main.cpp
 	<iostream>
 	<math.h>
 	"Dominios.h"
@@ -16,10 +16,10 @@
 1669927394 source:/home/miguel/Documents/3Semestre/TP1/Trab1/src/Entidades.cpp
 	"Entidades.h"
 
-1670186958 /home/miguel/Documents/3Semestre/TP1/Trab1/include/Entidades.h
+1670190534 /home/miguel/Documents/3Semestre/TP1/Trab1/include/Entidades.h
 	"Dominios.h"
 
-1670189257 source:/home/miguel/Documents/3Semestre/TP1/Trab1/src/TestesUnidade.cpp
+1670190036 source:/home/miguel/Documents/3Semestre/TP1/Trab1/src/TestesUnidade.cpp
 	"TestesUnidade.h"
 	<stdexcept>
 
