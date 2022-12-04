@@ -78,6 +78,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Classe abstrata, cujo principal atributo é uma string.  
+ <a href="classDominio.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Dominios_8h_source.html">Dominios.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Dominio:</div>
@@ -85,30 +88,41 @@ Inheritance diagram for Dominio:</div>
  <div class="center">
   <img src="classDominio.png" usemap="#Dominio_map" alt=""/>
   <map id="Dominio_map" name="Dominio_map">
-<area href="classDisciplina.html" alt="Disciplina" shape="rect" coords="0,56,67,80"/>
-<area href="classTexto.html" alt="Texto" shape="rect" coords="77,56,144,80"/>
+<area href="classCodigo.html" alt="Codigo" shape="rect" coords="0,56,67,80"/>
+<area href="classData.html" alt="Data" shape="rect" coords="77,56,144,80"/>
+<area href="classDisciplina.html" title="Representa os conhecimentos específicos que se ensinam em cada cadeira de uma escola." alt="Disciplina" shape="rect" coords="154,56,221,80"/>
+<area href="classMatricula.html" alt="Matricula" shape="rect" coords="231,56,298,80"/>
+<area href="classSenha.html" alt="Senha" shape="rect" coords="308,56,375,80"/>
+<area href="classTexto.html" title="Representa um conjunto de palavras." alt="Texto" shape="rect" coords="385,56,452,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adc86858ec8f9d7d91a0d8498f3614864"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDominio.html#adc86858ec8f9d7d91a0d8498f3614864">getValor</a> () const</td></tr>
+<tr class="memdesc:adc86858ec8f9d7d91a0d8498f3614864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a string, com formatação válida, armazenada em valor.  <a href="classDominio.html#adc86858ec8f9d7d91a0d8498f3614864">More...</a><br /></td></tr>
 <tr class="separator:adc86858ec8f9d7d91a0d8498f3614864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d0e7995d6252d5e3b15596ca8610f24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDominio.html#a8d0e7995d6252d5e3b15596ca8610f24">setValor</a> (string <a class="el" href="classDominio.html#adf6b3cc90ca5abce6cd462cdb313220e">valor</a>)</td></tr>
+<tr class="memdesc:a8d0e7995d6252d5e3b15596ca8610f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Armazena o valor da string passada no atributo valor se a string seguir corretamente as regras de formatação da classe.  <a href="classDominio.html#a8d0e7995d6252d5e3b15596ca8610f24">More...</a><br /></td></tr>
 <tr class="separator:a8d0e7995d6252d5e3b15596ca8610f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a4df4d32136bed877313a4e2fb6374bb2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDominio.html#a4df4d32136bed877313a4e2fb6374bb2">validar</a> (string <a class="el" href="classDominio.html#adf6b3cc90ca5abce6cd462cdb313220e">valor</a>)=0</td></tr>
+<tr class="memitem:a4df4d32136bed877313a4e2fb6374bb2"><td class="memItemLeft" align="right" valign="top"><a id="a4df4d32136bed877313a4e2fb6374bb2" name="a4df4d32136bed877313a4e2fb6374bb2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>validar</b> (string <a class="el" href="classDominio.html#adf6b3cc90ca5abce6cd462cdb313220e">valor</a>)=0</td></tr>
 <tr class="separator:a4df4d32136bed877313a4e2fb6374bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:adf6b3cc90ca5abce6cd462cdb313220e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDominio.html#adf6b3cc90ca5abce6cd462cdb313220e">valor</a></td></tr>
+<tr class="memitem:adf6b3cc90ca5abce6cd462cdb313220e"><td class="memItemLeft" align="right" valign="top"><a id="adf6b3cc90ca5abce6cd462cdb313220e" name="adf6b3cc90ca5abce6cd462cdb313220e"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>valor</b></td></tr>
+<tr class="memdesc:adf6b3cc90ca5abce6cd462cdb313220e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atributo principal da classe. <br  />
+ É uma string que sempre está seguindo a formatação definida pela classe. <br /></td></tr>
 <tr class="separator:adf6b3cc90ca5abce6cd462cdb313220e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Classe abstrata, cujo principal atributo é uma string. Essa classe serve como base para todas as outras classes de domínios do sistema. </p>
+<div class="textblock"><p >Classe abstrata, cujo principal atributo é uma string. </p>
+<p >Essa classe serve como base para todas as outras classes de domínios do sistema. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="adc86858ec8f9d7d91a0d8498f3614864" name="adc86858ec8f9d7d91a0d8498f3614864"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc86858ec8f9d7d91a0d8498f3614864">&#9670;&#160;</a></span>getValor()</h2>
@@ -132,7 +146,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Retorna a string, com formatação válida, armazenada em valor </p><dl class="section return"><dt>Returns</dt><dd>-string valor </dd></dl>
+
+<p>Retorna a string, com formatação válida, armazenada em valor. </p>
+<dl class="section return"><dt>Returns</dt><dd>string valor </dd></dl>
 
 </div>
 </div>
@@ -151,7 +167,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Armazena o valor da string passada no atributo valor se a string seguir corretamente as regras de formatação da classe. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Armazena o valor da string passada no atributo valor se a string seguir corretamente as regras de formatação da classe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">-string</td><td>valor: string que se quer armazenar no atributo, esse valor deve seguir as regras de formatação da classe </td></tr>
   </table>
@@ -159,79 +177,15 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">-invalid_argument</td><td>: se o valor passado não cumprir as regras de formatção </td></tr>
+    <tr><td class="paramname">-invalid_argument</td><td>: se o valor passado não cumprir as regras de formatação </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a4df4d32136bed877313a4e2fb6374bb2" name="a4df4d32136bed877313a4e2fb6374bb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4df4d32136bed877313a4e2fb6374bb2">&#9670;&#160;</a></span>validar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Dominio::validar </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>valor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Função que recebe uma string e avalia se ela cumpre as regras de formatação da classe, se elas não forem cumpridas lança uma exceção invalid_argument. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">-string</td><td>valor: string que será avaliada. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">-invalid_argumet</td><td>se a string passada não seguir a formatação apropriada para a classe </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="adf6b3cc90ca5abce6cd462cdb313220e" name="adf6b3cc90ca5abce6cd462cdb313220e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf6b3cc90ca5abce6cd462cdb313220e">&#9670;&#160;</a></span>valor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string Dominio::valor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Atributo principal da classe. <br  />
- É uma string que sempre está seguindo a formatação definida pela classe. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/miguel/Documents/3Semestre/TP1/Trab1/include/<a class="el" href="Dominios_8h_source.html">Dominios.h</a></li>
-<li>/home/miguel/Documents/3Semestre/TP1/Trab1/src/Dominios.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

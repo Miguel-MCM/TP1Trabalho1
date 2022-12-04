@@ -12,32 +12,100 @@
 \DoxyCodeLine{10 \{}
 \DoxyCodeLine{11     \textcolor{keyword}{protected}:}
 \DoxyCodeLine{14         \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}};}
-\DoxyCodeLine{18         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classDominio_a4df4d32136bed877313a4e2fb6374bb2}{validar}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}}) = 0;}
-\DoxyCodeLine{19 }
-\DoxyCodeLine{20     \textcolor{keyword}{public}:}
-\DoxyCodeLine{23         \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adc86858ec8f9d7d91a0d8498f3614864}{getValor}}() \textcolor{keyword}{const};}
-\DoxyCodeLine{27         \textcolor{keywordtype}{void} \mbox{\hyperlink{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}{setValor}}( \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}} );}
-\DoxyCodeLine{28 \};}
-\DoxyCodeLine{29 }
-\DoxyCodeLine{30 \textcolor{keyword}{inline} \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adc86858ec8f9d7d91a0d8498f3614864}{Dominio::getValor}}()\textcolor{keyword}{ const }\{}
-\DoxyCodeLine{31     \textcolor{keywordflow}{return} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}};}
-\DoxyCodeLine{32 \}}
-\DoxyCodeLine{33 }
-\DoxyCodeLine{37 \textcolor{keyword}{class }\mbox{\hyperlink{classDisciplina}{Disciplina}}:\textcolor{keyword}{public} \mbox{\hyperlink{classDominio}{Dominio}} \{}
-\DoxyCodeLine{38     \textcolor{keyword}{private}:}
-\DoxyCodeLine{39         \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
-\DoxyCodeLine{40 }
-\DoxyCodeLine{41 \};}
-\DoxyCodeLine{42 }
-\DoxyCodeLine{51 \textcolor{keyword}{class }\mbox{\hyperlink{classTexto}{Texto}}:\textcolor{keyword}{public} \mbox{\hyperlink{classDominio}{Dominio}} \{}
-\DoxyCodeLine{52     \textcolor{keyword}{private}:}
-\DoxyCodeLine{53         \textcolor{keywordtype}{bool} pontuacoesEmSequencia(\textcolor{keyword}{const} \textcolor{keywordtype}{string} pontuacoes, \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
-\DoxyCodeLine{54         \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
-\DoxyCodeLine{55         \textcolor{keywordtype}{bool} charEmSequencia(\textcolor{keywordtype}{char} carac, \textcolor{keywordtype}{string} str);}
-\DoxyCodeLine{56 }
-\DoxyCodeLine{57 \};}
-\DoxyCodeLine{58 }
-\DoxyCodeLine{59 }
-\DoxyCodeLine{60 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DOMINIOS\_H}}
+\DoxyCodeLine{15         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}}) = 0;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22         \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adc86858ec8f9d7d91a0d8498f3614864}{getValor}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}{setValor}}( \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}} );}
+\DoxyCodeLine{27 \};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{inline} \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adc86858ec8f9d7d91a0d8498f3614864}{Dominio::getValor}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{30     \textcolor{keywordflow}{return} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}};}
+\DoxyCodeLine{31 \}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{36 \textcolor{keyword}{class }\mbox{\hyperlink{classDisciplina}{Disciplina}}:\textcolor{keyword}{public} \mbox{\hyperlink{classDominio}{Dominio}} \{}
+\DoxyCodeLine{37     \textcolor{keyword}{private}:}
+\DoxyCodeLine{38         \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{50 \textcolor{keyword}{class }\mbox{\hyperlink{classTexto}{Texto}}:\textcolor{keyword}{public} \mbox{\hyperlink{classDominio}{Dominio}} \{}
+\DoxyCodeLine{51     \textcolor{keyword}{private}:}
+\DoxyCodeLine{52         \textcolor{keywordtype}{bool} pontuacoesEmSequencia(\textcolor{keyword}{const} \textcolor{keywordtype}{string} pontuacoes, \textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
+\DoxyCodeLine{53         \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string} \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
+\DoxyCodeLine{54         \textcolor{keywordtype}{bool} charEmSequencia(\textcolor{keywordtype}{char} carac, \textcolor{keywordtype}{string} str);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{keyword}{class }\mbox{\hyperlink{classCodigo}{Codigo}}:\textcolor{keyword}{public} \mbox{\hyperlink{classDominio}{Dominio}} \{}
+\DoxyCodeLine{59     \textcolor{keyword}{private}:}
+\DoxyCodeLine{60         \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{61 \};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{class }\mbox{\hyperlink{classMatricula}{Matricula}}: \textcolor{keyword}{public} \mbox{\hyperlink{classDominio}{Dominio}} \{}
+\DoxyCodeLine{65     \textcolor{keyword}{private}:}
+\DoxyCodeLine{66         \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{67 \};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \textcolor{keyword}{class }\mbox{\hyperlink{classSenha}{Senha}}: \textcolor{keyword}{public} \mbox{\hyperlink{classDominio}{Dominio}} \{}
+\DoxyCodeLine{71     \textcolor{keyword}{private}:}
+\DoxyCodeLine{72         \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{73 \};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{keyword}{class }\mbox{\hyperlink{classData}{Data}}:\textcolor{keyword}{public} \mbox{\hyperlink{classDominio}{Dominio}} \{}
+\DoxyCodeLine{76     \textcolor{keyword}{private}:}
+\DoxyCodeLine{77         \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} SIZE = 8;}
+\DoxyCodeLine{78         \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} SECULO = 21;}
+\DoxyCodeLine{79         \textcolor{keywordtype}{string} \textcolor{keyword}{const} BARRA = \textcolor{stringliteral}{"{}-\/"{}};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81         \textcolor{keywordtype}{void} validar(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{82         \textcolor{keyword}{static} \textcolor{keywordtype}{int} incrFeb(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{83         \textcolor{keyword}{static} \textcolor{keywordtype}{int} calcAno(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{84         \textcolor{keyword}{static} \textcolor{keywordtype}{int} countChar(\textcolor{keywordtype}{string}, \textcolor{keywordtype}{string});}
+\DoxyCodeLine{85         \textcolor{keyword}{static} \textcolor{keywordtype}{string} formatarInt(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87     \textcolor{keyword}{public}:}
+\DoxyCodeLine{88         \textcolor{keywordtype}{string} getDia(), getMes(), getAno();}
+\DoxyCodeLine{89         \textcolor{keyword}{static} \textcolor{keywordtype}{string} getDia(\textcolor{keywordtype}{string}), getMes(\textcolor{keywordtype}{string}), getAno(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91         \textcolor{keywordtype}{void} setData(\textcolor{keywordtype}{string}), setData(\textcolor{keywordtype}{string}, \textcolor{keywordtype}{string}, \textcolor{keywordtype}{string}), setData(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93         \textcolor{keyword}{static} \textcolor{keywordtype}{int} isLeapYear(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{94         \textcolor{keyword}{static} \textcolor{keywordtype}{int} isLeapYear(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{95         \textcolor{keywordtype}{int} isLeapYear();}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         \mbox{\hyperlink{classData}{Data}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{98         \mbox{\hyperlink{classData}{Data}}(\textcolor{keywordtype}{string}, \textcolor{keywordtype}{string}, \textcolor{keywordtype}{string});}
+\DoxyCodeLine{99         \mbox{\hyperlink{classData}{Data}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{100 \};}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 \textcolor{keyword}{inline} \textcolor{keywordtype}{string} Data::getDia() \{}
+\DoxyCodeLine{103     \textcolor{keywordflow}{return} getDia(this-\/>\mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
+\DoxyCodeLine{104 \}}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106 \textcolor{keyword}{inline} \textcolor{keywordtype}{string} Data::getDia(\textcolor{keywordtype}{string} data) \{}
+\DoxyCodeLine{107     \textcolor{keywordflow}{return} data.substr(0, 2);}
+\DoxyCodeLine{108 \}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 \textcolor{keyword}{inline} \textcolor{keywordtype}{string} Data::getMes() \{}
+\DoxyCodeLine{111     \textcolor{keywordflow}{return} getMes(this-\/>\mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
+\DoxyCodeLine{112 \}}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 \textcolor{keyword}{inline} \textcolor{keywordtype}{string} Data::getMes(\textcolor{keywordtype}{string} data) \{}
+\DoxyCodeLine{115     \textcolor{keywordflow}{return} data.substr(3, 2);}
+\DoxyCodeLine{116 \}}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 \textcolor{keyword}{inline} \textcolor{keywordtype}{string} Data::getAno() \{}
+\DoxyCodeLine{119     \textcolor{keywordflow}{return} getAno(this-\/>\mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}});}
+\DoxyCodeLine{120 \}}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 \textcolor{keyword}{inline} \textcolor{keywordtype}{string} Data::getAno(\textcolor{keywordtype}{string} data) \{}
+\DoxyCodeLine{123     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}20"{}} + data.substr(6, 2);}
+\DoxyCodeLine{124 \}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DOMINIOS\_H}}
 
 \end{DoxyCode}

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['validar_0',['validar',['../classDominio.html#a4df4d32136bed877313a4e2fb6374bb2',1,'Dominio']]],
-  ['valor_1',['valor',['../classDominio.html#adf6b3cc90ca5abce6cd462cdb313220e',1,'Dominio']]]
+  ['senha_0',['Senha',['../classSenha.html',1,'']]],
+  ['setvalor_1',['setValor',['../classDominio.html#a8d0e7995d6252d5e3b15596ca8610f24',1,'Dominio']]]
 ];

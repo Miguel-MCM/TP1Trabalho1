@@ -22,16 +22,6 @@ void Disciplina::validar(string valor) {
         throw invalid_argument("Disciplina Invalida");
 }
 
-string Dominio::formatarInt(int n, int digitos) {
-    string str_n = to_string(n);
-    int tamanho = str_n.length();
-
-    for (int i = 0; i < digitos - tamanho; i++) {
-        str_n = "0" + str_n;
-    }
-
-    return str_n;
-}
 
 bool Texto::charEmSequencia(char carac, string str) {
     for (int i=1; i<str.size();i++) {
@@ -159,7 +149,18 @@ void Senha::validar(string valor) {
     }
 }
 
-int Dominio::countChar(string param, string target) {
+string Data::formatarInt(int n, int digitos) {
+    string str_n = to_string(n);
+    int tamanho = str_n.length();
+
+    for (int i = 0; i < digitos - tamanho; i++) {
+        str_n = "0" + str_n;
+    }
+
+    return str_n;
+}
+
+int Data::countChar(string param, string target) {
     if (target.length() != 1)
         throw invalid_argument("Argumento invalido");
     int res;

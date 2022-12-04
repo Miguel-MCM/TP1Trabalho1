@@ -4,28 +4,25 @@
 #include <string>
 
 using namespace std;
-/// Classe abstrata, cujo principal atributo é uma string.
-/// Essa classe serve como base para todas as outras classes de domínios do sistema.
+/// @brief Classe abstrata, cujo principal atributo é uma string.
+/// @details Essa classe serve como base para todas as outras classes de domínios do sistema.
 class Dominio
 {
     protected:
-        /// Atributo principal da classe. <br/>
+        /// @brief Atributo principal da classe. <br/>
         /// É uma string que sempre está seguindo a formatação definida pela classe.
         string valor;
-        /// Função que recebe uma string e avalia se ela cumpre as regras de formatação da classe, se elas não forem cumpridas lança uma exceção invalid_argument.
-        /// @param -string valor: string que será avaliada.
-        /// @throw -invalid_argumet: se a string passada não seguir a formatação apropriada para a classe
         virtual void validar(string valor) = 0;
-        static int countChar(string, string);
-        static string formatarInt(int, int);
+
 
     public:
-        /// Retorna a string, com formatação válida, armazenada em valor
-        /// @return -string valor
+        /// @brief Retorna a string, com formatação válida, armazenada em valor
+        /// @return string valor
+        /// @memberof Disciplina
         string getValor() const;
-        /// Armazena o valor da string passada no atributo valor se a string seguir corretamente as regras de formatação da classe.
+        /// @brief Armazena o valor da string passada no atributo valor se a string seguir corretamente as regras de formatação da classe.
         /// @param -string valor: string que se quer armazenar no atributo, esse valor deve seguir as regras de formatação da classe
-        /// @throw -invalid_argument : se o valor passado não cumprir as regras de formatção
+        /// @throw -invalid_argument : se o valor passado não cumprir as regras de formatação
         void setValor( string valor );
 };
 
@@ -33,8 +30,8 @@ inline string Dominio::getValor() const {
     return valor;
 }
 
-/// Representa os conhecimentos específicos que se ensinam em cada cadeira de uma escola. <br/>
-/// O valor armazenado serve a seguinte regra:<ul>
+/// @brief Representa os conhecimentos específicos que se ensinam em cada cadeira de uma escola. <br/>
+/// @details O valor armazenado serve a seguinte regra:<ul>
 /// <li>O valor deve ser uma das seguintes:<ul><li> Arquitetura</li><li> Desenvolvimento</li><li> Gerenciamento</li><li> Implantacao</li><li> Requisitos</li><li> Teste </li></ul></li> </ul>
 class Disciplina:public Dominio {
     private:
@@ -42,12 +39,12 @@ class Disciplina:public Dominio {
 
 };
 
-/// Conjunto de Palavras.
-/// O valor armazenado serve a seguinte regra:<ul>
+/// @brief Representa um conjunto de palavras.
+/// @details O valor armazenado segue as seguintes regras:<ul>
 ///     <li> Deve ter no mínimo 10 caracteres e no máximo 40 </li>
 ///     <li> Cada caractere deve ser letra (de A-Z ou a-z), dígito (0-9) ou sinal de pontuação (. , ; ? ! : - ). </li>
 ///     <li> Não podem haver espaços em branco em sequência. </li>
-///     <li> Não há sinal de pontuação (. , ; : ? ! -) em sequência.
+///     <li> Não há sinal de pontuação (. , ; : ? ! -) em sequência.</li>
 /// </ul>
 /// A acentução é desconsiderada.
 class Texto:public Dominio {
@@ -84,6 +81,8 @@ class Data:public Dominio {
         void validar(string);
         static int incrFeb(string);
         static int calcAno(int);
+        static int countChar(string, string);
+        static string formatarInt(int, int);
 
     public:
         string getDia(), getMes(), getAno();
