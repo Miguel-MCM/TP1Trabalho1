@@ -75,20 +75,20 @@ class Senha: public Dominio {
         void validar(string);
 };
 
-/// @brief indicação ou registro do dia ou época da ocorrência de algum fato ou evento.
-/// @details O Valor armazenado segue a seguinte formatação:
-/// DD-MM-YY
-///     <ul>
-///         <li> DD representa um dia (de 01-31), conforme o calendário. </li>
-///         <li> MM representa um mes (de 01-12), confome o calendário. </li>
-///         <li> YY representa um ano (de 00-99). </li>
-///         <li> todos separados por "-" </li>
-///     </ul>
+/// @brief Forma de representação do dia atual, a partir do ano 2000
+/// @details Regras de formatação:
+/// <ul>
+/// <li>DD-MM-AA, em que D, M e A representam os digitos de Dia, Mês e Ano</li>
+/// <li>Dias: 1 a 31</li>
+/// <li>Meses: 1 a 12</li>
+/// <li>Anos: 0 a 99</li>
+/// <li>Há verificação de ano bissexto</li>
+/// </ul>
 class Data:public Dominio {
     private:
         static const int SIZE = 8;
         static const int SECULO = 21;
-        string const BARRA = "-";
+        static const char BARRA = '-';
 
         void validar(string);
         static int incrFeb(string);
@@ -110,17 +110,27 @@ class Data:public Dominio {
         /// @brief Retorna apenas a parte do ano da string passada
         static string getAno(string);
 
-        void setData(string), setData(string, string, string), setData(int, int, int);
-
         /// @brief Retorna se o ano passado é um ano bissexto
-        static int isLeapYear(int);
+        static bool isLeapYear(int);
         /// @brief Retorna se o ano passado é um ano bissexto
-        static int isLeapYear(string);
+        static bool isLeapYear(string);
         /// @brief Retorna se o ano da data armazenado é um ano bissexto
-        int isLeapYear();
+        bool isLeapYear();
 
+        /// @brief Construtor padrão que apenas armazenará a string recebida no atributo valor, após validação.
+        /// @param string data
         Data(string);
+
+        /// @brief Construtor alternativo que receberá dia, mês e ano separadamente e os junta para armazená-los no atributo valor, após validação.
+        /// @param string Dia
+        /// @param string Mes
+        /// @param string Ano
         Data(string, string, string);
+
+        /// @brief Construtor alternativo, que receberá dia, mês e ano separadamente e, depois de convertê-los para string, os junta para armazená-los no atributo valor, após validação.
+        /// @param int Dia
+        /// @param int Mes
+        /// @param int Ano
         Data(int, int, int);
 };
 
@@ -147,5 +157,11 @@ inline string Data::getAno() {
 inline string Data::getAno(string data) {
     return "20" + data.substr(6, 2);
 }
+
+class Nome:public Dominio {
+    private:
+        void validar(string);
+
+};
 
 #endif // DOMINIOS_H

@@ -53,7 +53,7 @@ void TUTexto::setUp() {
 
 void TUCodigo::setUp() {
     VALOR_VALIDO = new const string("12345678900");
-    VALOR_INVALIDO = new const string("1234567898");
+    VALOR_INVALIDO = new const string("12345678908");
     dominio = new Codigo;
     estado = true;
 }
@@ -78,11 +78,54 @@ void TUData::setUp() {
     dominio = new Data("31-12-99");
     estado = true;
 }
-/*
+
 void TUNome::setUp() {
     VALOR_VALIDO = new const string("Neymar Jr");
     VALOR_INVALIDO = new const string("cRISTIANO rONALDO");
     dominio = new Nome;
     estado = true;
 }
-*/
+
+void TUProjeto::setUp() {
+    projeto = new Projeto;
+    estado = true;
+}
+
+void TUProjeto::tearDown() {
+    delete projeto;
+}
+
+bool TUProjeto::run() {
+    setUp();
+    testarCenarioSucesso();
+    tearDown();
+    return estado;
+}
+
+void TUProjeto::testarCenarioSucesso() {
+    const string NOME_VALIDO = "Projeto Alpha 001";
+    const string CODIGO_VALIDO = "12345678900";
+    const string DESCRICAO_VALIDA = "Um projeto muito bacaninha!";
+
+    // teste do nome
+    Texto nome;
+    nome.setValor(NOME_VALIDO);
+    projeto->setNome(nome);
+    if (projeto->getNome().getValor() != NOME_VALIDO)
+        estado = false;
+
+    // teste codigo
+    Codigo codigo;
+    codigo.setValor(CODIGO_VALIDO);
+    projeto->setCodigo(codigo);
+    if (projeto->getCodigo().getValor() != CODIGO_VALIDO)
+        estado = false;
+
+    // teste descrição
+    Texto descricao;
+    descricao.setValor(DESCRICAO_VALIDA);
+    projeto->setDescricao(descricao);
+    if (projeto->getDescricao().getValor() != DESCRICAO_VALIDA)
+     estado = false;
+}
+

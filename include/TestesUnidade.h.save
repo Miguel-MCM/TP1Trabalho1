@@ -50,7 +50,18 @@ class TUData:public TUDominio{
 
 class TUNome:public TUDominio{
     private:
-        //void setUp();
+        void setUp();
+};
+
+class TUProjeto {
+private:
+    Projeto *projeto;
+    bool estado;                            
+    void setUp();                           
+    void tearDown();                        
+    void testarCenarioSucesso();            
+public:
+    int run();
 };
 
 #endif // TESTESUNIDADE_H

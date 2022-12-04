@@ -4,8 +4,7 @@
 #include "Dominios.h"
 
 using namespace std;
-
-class Tarefa {
+/class Tarefa {
     private:
             Texto nome;
             Codigo codigo;
@@ -148,5 +147,4 @@ inline void Usuario::setSenha(const Senha &senha){
 inline Senha Usuario::getSenha() const{
     return senha;
 }
-
 #endif // ENTIDADES_H_INCLUDED

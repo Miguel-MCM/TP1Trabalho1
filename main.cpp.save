@@ -13,7 +13,7 @@ int main()
         cout << "SUCESSO." << endl;
     else
         cout << "FRACASSO" << endl;
-/*
+
     TUTexto t_u_texto;
     cout << "Teste Unidade Texto: ";
     if (t_u_texto.run())
@@ -48,13 +48,18 @@ int main()
         cout << "SUCESSO." << endl;
     else
         cout << "FRACASSO" << endl;
-/*
+
     TUNome t_u_nome;
     cout << "Teste Unidade Nome: ";
     if (t_u_nome.run())
         cout << "SUCESSO." << endl;
     else
         cout << "FRACASSO" << endl;
-*/
+
+    cout << endl;
+        
+    TUProjeto t_u_projeto;
+    cout << "Teste Unidade Projeto"
+    
     return 0;
 }

@@ -183,7 +183,7 @@ void Data::validar(string data) {
     }
     for (int i = 0; i < SIZE; i++) {
         if (i == 2 || i == 5) {
-            if (data[i] != BARRA[0]) {
+            if (data[i] != BARRA) {
                 throw invalid_argument("Argumento invalido: fora da formatacao " + data);
             }
         }
@@ -202,31 +202,18 @@ void Data::validar(string data) {
     throw invalid_argument("Argumento invalido: data invalida " + data);
 }
 
-void Data::setData(string data) {
-    validar(data);
-    this->valor = data;
-}
-
-void Data::setData(string dia, string mes, string ano) {
-    string data = dia + BARRA + mes + BARRA + ano;
-    this->setData(data);
-}
-
-void Data::setData(int dia, int mes, int ano) {
-    string data = formatarInt(dia, 2) + BARRA + formatarInt(mes, 2) + BARRA + formatarInt(ano, 2);
-    this->setData(data);
-}
-
 Data::Data(string data) {
-    this->setData(data);
+    this->setValor(data);
 }
 
 Data::Data(string dia, string mes, string ano) {
-    this->setData(dia, mes, ano);
+    string data = dia + BARRA + mes + BARRA + ano;
+    this->setValor(data);
 }
 
 Data::Data(int dia, int mes, int ano) {
-    this->setData(dia, mes, ano);
+    string data = formatarInt(dia, 2) + BARRA + formatarInt(mes, 2) + BARRA + formatarInt(ano, 2);
+    this->setValor(data);
 }
 
 int Data::incrFeb(string data) {
@@ -235,14 +222,51 @@ int Data::incrFeb(string data) {
     return isLeapYear(data);
 }
 
-int Data::isLeapYear() {
+bool Data::isLeapYear() {
     return isLeapYear(this->valor);
 }
 
-int Data::isLeapYear(int ano) {
+bool Data::isLeapYear(int ano) {
     return ano % 400 == 0 || (ano % 4 == 0 && ano % 100 != 0);
 }
 
-int Data::isLeapYear(string data) {
+bool Data::isLeapYear(string data) {
     return isLeapYear(calcAno(stoi(getAno(data))));
+}
+
+void Nome::validar(string nome) {
+    if (nome.length() > 20)
+        throw invalid_argument("Tamanho de nome invalido");
+
+    int espacos = 0;
+    int p = 0;
+    for (string::iterator it=nome.begin(); it != nome.end(); it++) {
+        if (isspace(*it)) {
+            if (it != nome.begin() && it != nome.end() - 1) {
+                espacos++;
+            }
+            if (it != nome.end() - 1 && isspace(*(it + 1))) {
+                throw invalid_argument("Sequencia de espacos invalido");
+            }
+        }
+        else if (isalpha(*it)) {
+            if (it == nome.begin() || isspace(*(it - 1))) {
+                if (islower(*it)) {
+                    throw invalid_argument("Prenome ou sobrenome comecando com letra minuscula");
+                }
+            }
+            else if (isupper(*it)){
+                throw invalid_argument("Prenome ou sobrenome com letra maiuscula no meio");
+            }
+
+        }
+        else {
+            throw invalid_argument("Caracter invalido (posicao: " + to_string(p) + ")");
+        }
+        p++;
+    }
+
+    if (espacos > 2) {
+        throw invalid_argument("Mais de 2 sobrenomes");
+    }
 }

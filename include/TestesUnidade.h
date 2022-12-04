@@ -1,7 +1,7 @@
 #ifndef TESTESUNIDADE_H
 #define TESTESUNIDADE_H
 #include "Dominios.h"
-
+#include "Entidades.h"
 
 class TUDominio {
     protected:
@@ -50,7 +50,18 @@ class TUData:public TUDominio{
 
 class TUNome:public TUDominio{
     private:
-        //void setUp();
+        void setUp();
+};
+
+class TUProjeto {
+private:
+    Projeto *projeto;
+    bool estado;
+    void setUp();
+    void tearDown();
+    void testarCenarioSucesso();
+public:
+    bool run();
 };
 
 #endif // TESTESUNIDADE_H
