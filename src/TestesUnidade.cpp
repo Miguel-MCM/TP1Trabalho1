@@ -3,8 +3,8 @@
 #include <stdexcept>
 bool TUDominio::run(){
     setUp();
-    testarCenariosValidos();
-    testarCenarioInvalidos();
+    testarCenarioValido();
+    testarCenarioInvalido();
     tearDown();
     return estado;
 }
@@ -15,7 +15,7 @@ void TUDominio::tearDown(){
     delete VALOR_INVALIDO;
 }
 
-void TUDominio::testarCenariosValidos() {
+void TUDominio::testarCenarioValido() {
     try {
         dominio->setValor(*VALOR_VALIDO);
         if (dominio->getValor() != *VALOR_VALIDO)
@@ -26,7 +26,7 @@ void TUDominio::testarCenariosValidos() {
     }
 }
 
-void TUDominio::testarCenarioInvalidos(){
+void TUDominio::testarCenarioInvalido(){
     try {
         dominio->setValor(*VALOR_INVALIDO);
         estado = false;
@@ -82,7 +82,7 @@ void TUData::setUp() {
 void TUNome::setUp() {
     VALOR_VALIDO = new const string("Neymar Jr");
     VALOR_INVALIDO = new const string("cRISTIANO rONALDO");
-    dominio = new Data("31-12-99");
+    dominio = new Nome;
     estado = true;
 }
 */

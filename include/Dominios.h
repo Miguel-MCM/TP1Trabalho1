@@ -6,6 +6,7 @@
 using namespace std;
 /// @brief Classe abstrata, cujo principal atributo é uma string.
 /// @details Essa classe serve como base para todas as outras classes de domínios do sistema.
+// por: Miguel Carvalho 211068341
 class Dominio
 {
     protected:
@@ -33,6 +34,7 @@ inline string Dominio::getValor() const {
 /// @brief Representa os conhecimentos específicos que se ensinam em cada cadeira de uma escola. <br/>
 /// @details O valor armazenado serve a seguinte regra:<ul>
 /// <li>O valor deve ser uma das seguintes:<ul><li> Arquitetura</li><li> Desenvolvimento</li><li> Gerenciamento</li><li> Implantacao</li><li> Requisitos</li><li> Teste </li></ul></li> </ul>
+// por Miguel Carvalho 211068341
 class Disciplina:public Dominio {
     private:
         void validar(string valor);
@@ -47,6 +49,7 @@ class Disciplina:public Dominio {
 ///     <li> Não há sinal de pontuação (. , ; : ? ! -) em sequência.</li>
 /// </ul>
 /// A acentução é desconsiderada.
+// por Miguel Carvalho 211068341
 class Texto:public Dominio {
     private:
         bool pontuacoesEmSequencia(const string pontuacoes, string valor);
@@ -72,6 +75,15 @@ class Senha: public Dominio {
         void validar(string);
 };
 
+/// @brief indicação ou registro do dia ou época da ocorrência de algum fato ou evento.
+/// @details O Valor armazenado segue a seguinte formatação:
+/// DD-MM-YY
+///     <ul>
+///         <li> DD representa um dia (de 01-31), conforme o calendário. </li>
+///         <li> MM representa um mes (de 01-12), confome o calendário. </li>
+///         <li> YY representa um ano (de 00-99). </li>
+///         <li> todos separados por "-" </li>
+///     </ul>
 class Data:public Dominio {
     private:
         static const int SIZE = 8;
@@ -85,13 +97,26 @@ class Data:public Dominio {
         static string formatarInt(int, int);
 
     public:
-        string getDia(), getMes(), getAno();
-        static string getDia(string), getMes(string), getAno(string);
+        /// @brief Retorna apenas a parte do dia da data armazenada
+        string getDia();
+        /// @brief Retorna apenas a parte do mês da data armazenada
+        string getMes();
+        /// @brief Retorna apenas a parte do ano da data armazenada
+        string getAno();
+        /// @brief Retorna apenas a parte do dia da string passada
+        static string getDia(string);
+        /// @brief Retorna apenas a parte do mês da string passada
+        static string getMes(string);
+        /// @brief Retorna apenas a parte do ano da string passada
+        static string getAno(string);
 
         void setData(string), setData(string, string, string), setData(int, int, int);
 
+        /// @brief Retorna se o ano passado é um ano bissexto
         static int isLeapYear(int);
+        /// @brief Retorna se o ano passado é um ano bissexto
         static int isLeapYear(string);
+        /// @brief Retorna se o ano da data armazenado é um ano bissexto
         int isLeapYear();
 
         Data(string);

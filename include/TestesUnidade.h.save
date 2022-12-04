@@ -7,14 +7,12 @@ class TUDominio {
     protected:
         bool estado;
         Dominio * dominio;
-        virtual const int NUM_VALORES_VALIDOS;
-
         const string * VALOR_VALIDO;
         const string * VALOR_INVALIDO;
         virtual void setUp() = 0;
         void tearDown();
-        virtual void testarCenariosValidos();
-        virtual void testarCenarioInvalidos();
+        virtual void testarCenarioValido();
+        virtual void testarCenarioInvalido();
 
     public:
         bool run();

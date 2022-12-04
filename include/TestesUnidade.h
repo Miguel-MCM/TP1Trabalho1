@@ -11,8 +11,8 @@ class TUDominio {
         const string * VALOR_INVALIDO;
         virtual void setUp() = 0;
         void tearDown();
-        virtual void testarCenariosValidos();
-        virtual void testarCenarioInvalidos();
+        virtual void testarCenarioValido();
+        virtual void testarCenarioInvalido();
 
     public:
         bool run();
