@@ -1,0 +1,62 @@
+\hypertarget{TestesUnidade_8h_source}{}\doxysection{Testes\+Unidade.\+h}
+\label{TestesUnidade_8h_source}\index{/home/miguel/Documents/3Semestre/TP1/Trab1/include/TestesUnidade.h@{/home/miguel/Documents/3Semestre/TP1/Trab1/include/TestesUnidade.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef TESTESUNIDADE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define TESTESUNIDADE\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Dominios.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{classTUDominio}{TUDominio}} \{}
+\DoxyCodeLine{7     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{8         \textcolor{keywordtype}{bool} estado;}
+\DoxyCodeLine{9         \mbox{\hyperlink{classDominio}{Dominio}} * dominio;}
+\DoxyCodeLine{10         \textcolor{keyword}{const} \textcolor{keywordtype}{string} * VALOR\_VALIDO;}
+\DoxyCodeLine{11         \textcolor{keyword}{const} \textcolor{keywordtype}{string} * VALOR\_INVALIDO;}
+\DoxyCodeLine{12         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setUp() = 0;}
+\DoxyCodeLine{13         \textcolor{keywordtype}{void} tearDown();}
+\DoxyCodeLine{14         \textcolor{keywordtype}{void} testarCenariosValidos();}
+\DoxyCodeLine{15         \textcolor{keywordtype}{void} testarCenarioInvalidos();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{keyword}{public}:}
+\DoxyCodeLine{18         \textcolor{keywordtype}{bool} run();}
+\DoxyCodeLine{19 \};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{classTUDisciplina}{TUDisciplina}}:\textcolor{keyword}{public} \mbox{\hyperlink{classTUDominio}{TUDominio}}\{}
+\DoxyCodeLine{22     \textcolor{keyword}{private}:}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} setUp();}
+\DoxyCodeLine{24 \};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{class }\mbox{\hyperlink{classTUTexto}{TUTexto}}:\textcolor{keyword}{public} \mbox{\hyperlink{classTUDominio}{TUDominio}}\{}
+\DoxyCodeLine{27     \textcolor{keyword}{private}:}
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} setUp();}
+\DoxyCodeLine{29 \};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{class }\mbox{\hyperlink{classTUCodigo}{TUCodigo}}:\textcolor{keyword}{public} \mbox{\hyperlink{classTUDominio}{TUDominio}}\{}
+\DoxyCodeLine{32     \textcolor{keyword}{private}:}
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} setUp();}
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{class }\mbox{\hyperlink{classTUMatricula}{TUMatricula}}:\textcolor{keyword}{public} \mbox{\hyperlink{classTUDominio}{TUDominio}}\{}
+\DoxyCodeLine{37     \textcolor{keyword}{private}:}
+\DoxyCodeLine{38         \textcolor{keywordtype}{void} setUp();}
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{keyword}{class }\mbox{\hyperlink{classTUSenha}{TUSenha}}:\textcolor{keyword}{public} \mbox{\hyperlink{classTUDominio}{TUDominio}}\{}
+\DoxyCodeLine{42     \textcolor{keyword}{private}:}
+\DoxyCodeLine{43         \textcolor{keywordtype}{void} setUp();}
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{class }\mbox{\hyperlink{classTUData}{TUData}}:\textcolor{keyword}{public} \mbox{\hyperlink{classTUDominio}{TUDominio}}\{}
+\DoxyCodeLine{47     \textcolor{keyword}{private}:}
+\DoxyCodeLine{48         \textcolor{keywordtype}{void} setUp();}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{keyword}{class }\mbox{\hyperlink{classTUNome}{TUNome}}:\textcolor{keyword}{public} \mbox{\hyperlink{classTUDominio}{TUDominio}}\{}
+\DoxyCodeLine{52     \textcolor{keyword}{private}:}
+\DoxyCodeLine{53         \textcolor{comment}{//void setUp();}}
+\DoxyCodeLine{54 \};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// TESTESUNIDADE\_H}}
+
+\end{DoxyCode}

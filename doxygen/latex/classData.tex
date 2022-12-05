@@ -1,0 +1,114 @@
+\hypertarget{classData}{}\doxysection{Data Class Reference}
+\label{classData}\index{Data@{Data}}
+
+
+Forma de representação do dia atual, a partir do ano 2000.  
+
+
+
+
+{\ttfamily \#include $<$Dominios.\+h$>$}
+
+Inheritance diagram for Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classData}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classData_a3f69546480b0051d7acff50f06500079}\label{classData_a3f69546480b0051d7acff50f06500079}} 
+string {\bfseries get\+Dia} ()
+\begin{DoxyCompactList}\small\item\em Retorna apenas a parte do dia da data armazenada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classData_a1b84f9bd3f5290c12f2db0b45b0e6e65}\label{classData_a1b84f9bd3f5290c12f2db0b45b0e6e65}} 
+string {\bfseries get\+Mes} ()
+\begin{DoxyCompactList}\small\item\em Retorna apenas a parte do mês da data armazenada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classData_a9b7657639a8c60fc9a32b0144868bf05}\label{classData_a9b7657639a8c60fc9a32b0144868bf05}} 
+string {\bfseries get\+Ano} ()
+\begin{DoxyCompactList}\small\item\em Retorna apenas a parte do ano da data armazenada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classData_a98c28dd0bd5af28ab28122cf5e524d92}\label{classData_a98c28dd0bd5af28ab28122cf5e524d92}} 
+bool {\bfseries is\+Leap\+Year} ()
+\begin{DoxyCompactList}\small\item\em Retorna se o ano da data armazenado é um ano bissexto. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classDominio_adc86858ec8f9d7d91a0d8498f3614864}{get\+Valor}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a string, com formatação válida, armazenada em valor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}{set\+Valor}} (string \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}})
+\begin{DoxyCompactList}\small\item\em Armazena o valor da string passada no atributo valor se a string seguir corretamente as regras de formatação da classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classData_a0e56bdce167adaf8f8309cad94747ab1}\label{classData_a0e56bdce167adaf8f8309cad94747ab1}} 
+static string {\bfseries get\+Dia} (string)
+\begin{DoxyCompactList}\small\item\em Retorna apenas a parte do dia da string passada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classData_a8f7362516a6bc67b9967f5ddc0833b98}\label{classData_a8f7362516a6bc67b9967f5ddc0833b98}} 
+static string {\bfseries get\+Mes} (string)
+\begin{DoxyCompactList}\small\item\em Retorna apenas a parte do mês da string passada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classData_ae4e88fa93c480b35ff5f55200d7a35de}\label{classData_ae4e88fa93c480b35ff5f55200d7a35de}} 
+static string {\bfseries get\+Ano} (string)
+\begin{DoxyCompactList}\small\item\em Retorna apenas a parte do ano da string passada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classData_a582482f7476023469ea84e8d74d45d37}\label{classData_a582482f7476023469ea84e8d74d45d37}} 
+static bool {\bfseries is\+Leap\+Year} (int)
+\begin{DoxyCompactList}\small\item\em Retorna se o ano passado é um ano bissexto. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classData_a8ef257edc9f8dcbeb0539dc59e4e2490}\label{classData_a8ef257edc9f8dcbeb0539dc59e4e2490}} 
+static bool {\bfseries is\+Leap\+Year} (string)
+\begin{DoxyCompactList}\small\item\em Retorna se o ano passado é um ano bissexto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}\label{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}} 
+string {\bfseries valor}
+\begin{DoxyCompactList}\small\item\em Atributo principal da classe. ~\newline
+ É uma string que sempre está seguindo a formatação definida pela classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Forma de representação do dia atual, a partir do ano 2000. 
+
+Regras de formatação\+: 
+\begin{DoxyItemize}
+\item DD-\/\+MM-\/\+AA, em que D, M e A representam os digitos de Dia, Mês e Ano 
+\item Dias\+: 1 a 31 
+\item Meses\+: 1 a 12 
+\item Anos\+: 0 a 99 
+\item Há verificação de ano bissexto 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDominio_adc86858ec8f9d7d91a0d8498f3614864}\label{classDominio_adc86858ec8f9d7d91a0d8498f3614864}} 
+\index{Data@{Data}!getValor@{getValor}}
+\index{getValor@{getValor}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily string Dominio\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Retorna a string, com formatação válida, armazenada em valor. 
+
+\begin{DoxyReturn}{Returns}
+string valor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}\label{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}} 
+\index{Data@{Data}!setValor@{setValor}}
+\index{setValor@{setValor}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Dominio\+::set\+Valor (\begin{DoxyParamCaption}\item[{string}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Armazena o valor da string passada no atributo valor se a string seguir corretamente as regras de formatação da classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/string} & valor\+: string que se quer armazenar no atributo, esse valor deve seguir as regras de formatação da classe \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em -\/invalid\+\_\+argument} & \+: se o valor passado não cumprir as regras de formatação \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/miguel/\+Documents/3\+Semestre/\+TP1/\+Trab1/include/Dominios.\+h\end{DoxyCompactItemize}

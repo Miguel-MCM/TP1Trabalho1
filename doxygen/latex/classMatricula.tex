@@ -1,0 +1,81 @@
+\hypertarget{classMatricula}{}\doxysection{Matricula Class Reference}
+\label{classMatricula}\index{Matricula@{Matricula}}
+
+
+Conjunto de caracteres que possibilita registrar um usuário no sistema.  
+
+
+
+
+{\ttfamily \#include $<$Dominios.\+h$>$}
+
+Inheritance diagram for Matricula\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMatricula}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classDominio_adc86858ec8f9d7d91a0d8498f3614864}{get\+Valor}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a string, com formatação válida, armazenada em valor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}{set\+Valor}} (string \mbox{\hyperlink{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}{valor}})
+\begin{DoxyCompactList}\small\item\em Armazena o valor da string passada no atributo valor se a string seguir corretamente as regras de formatação da classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}\label{classDominio_adf6b3cc90ca5abce6cd462cdb313220e}} 
+string {\bfseries valor}
+\begin{DoxyCompactList}\small\item\em Atributo principal da classe. ~\newline
+ É uma string que sempre está seguindo a formatação definida pela classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Conjunto de caracteres que possibilita registrar um usuário no sistema. 
+
+Formato\+: \char`\"{}\+LLLLDDDD\char`\"{} (8 caracteres) 
+\begin{DoxyItemize}
+\item \char`\"{}\+L\char`\"{} é letra maiúscula (A-\/Z);  
+\item \char`\"{}\+D\char`\"{} é dígito numérico (0-\/9). 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDominio_adc86858ec8f9d7d91a0d8498f3614864}\label{classDominio_adc86858ec8f9d7d91a0d8498f3614864}} 
+\index{Matricula@{Matricula}!getValor@{getValor}}
+\index{getValor@{getValor}!Matricula@{Matricula}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily string Dominio\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Retorna a string, com formatação válida, armazenada em valor. 
+
+\begin{DoxyReturn}{Returns}
+string valor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}\label{classDominio_a8d0e7995d6252d5e3b15596ca8610f24}} 
+\index{Matricula@{Matricula}!setValor@{setValor}}
+\index{setValor@{setValor}!Matricula@{Matricula}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Dominio\+::set\+Valor (\begin{DoxyParamCaption}\item[{string}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Armazena o valor da string passada no atributo valor se a string seguir corretamente as regras de formatação da classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/string} & valor\+: string que se quer armazenar no atributo, esse valor deve seguir as regras de formatação da classe \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em -\/invalid\+\_\+argument} & \+: se o valor passado não cumprir as regras de formatação \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/miguel/\+Documents/3\+Semestre/\+TP1/\+Trab1/include/Dominios.\+h\end{DoxyCompactItemize}
