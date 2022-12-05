@@ -65,5 +65,19 @@ int main()
     else
         cout << "\tFRACASSO." << endl;
 
+     TUTarefa t_u_tarefa;
+    cout << "Teste Unidade Tarefa: \t";
+    if (t_u_tarefa.run())
+        cout << "\tSUCESSO." << endl;
+    else
+        cout << "\tFRACASSO." << endl;
+
+    TUUsuario t_u_usuario;
+    cout << "Teste Unidade Usuario: \t\t";
+    if (t_u_usuario.run())
+        cout << "SUCESSO." << endl;
+    else
+        cout << "FRACASSO." << endl;
+
     return 0;
 }

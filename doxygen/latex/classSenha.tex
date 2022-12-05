@@ -1,5 +1,14 @@
 \hypertarget{classSenha}{}\doxysection{Senha Class Reference}
 \label{classSenha}\index{Senha@{Senha}}
+
+
+Sequência de caracteres alfanuméricos que permite o acesso a dados ou sistemas informáticos protegidos.  
+
+
+
+
+{\ttfamily \#include $<$Dominios.\+h$>$}
+
 Inheritance diagram for Senha\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,6 +30,16 @@ string {\bfseries valor}
 \begin{DoxyCompactList}\small\item\em Atributo principal da classe. ~\newline
  É uma string que sempre está seguindo a formatação definida pela classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Sequência de caracteres alfanuméricos que permite o acesso a dados ou sistemas informáticos protegidos. 
+
+Formato\+: \char`\"{}\+XXXXXX\char`\"{} (6 caracteres) 
+\begin{DoxyItemize}
+\item \char`\"{}\+X\char`\"{} é letra maiúscula (A-\/Z) ou dígito (0-\/9);  
+\item Não pode haver caractere duplicado;  
+\item Existem pelo menos duas letras maiúsculas e dois dígitos.  
+\end{DoxyItemize}
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classDominio_adc86858ec8f9d7d91a0d8498f3614864}\label{classDominio_adc86858ec8f9d7d91a0d8498f3614864}} 

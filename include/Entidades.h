@@ -4,7 +4,8 @@
 #include "Dominios.h"
 
 using namespace std;
-
+///@brief Entidade que representa um trabalho realizado de uma certa disciplina dentro de um prazo determinado.
+//por: Anita Garcia Lagos OLiveira (211068243)
 class Tarefa {
     private:
             Texto nome;
@@ -13,19 +14,45 @@ class Tarefa {
             Data termino;
             Disciplina disciplina;
     public:
+            ///@brief Armazena o nome da Tarefa caso o parâmetro passado seguir corretamente a formatação do domínio Texto.
+            /// @param - Texto nome
+            /// @throw - invalid_argument : se o valor passado não cumprir as regras de formatação
             void setNome(const Texto&);
+            ///@brief Retorna o nome da Tarefa.
+            /// @return - Texto nome
             Texto getNome() const;
 
+            ///@brief Armazena o código da Tarefa caso o parâmetro passado seguir corretamente a formatação do domínio Código.
+            /// @param - Codigo codigo
+            /// @throw - invalid_argument : se o valor passado não cumprir as regras de formatação
             void setCodigo(const Codigo&);
+            /// @brief Retorna o código da Tarefa.
+            /// @return - Codigo codigo
             Codigo getCodigo() const;
 
+            /// @brief Armazena a data de início da Tarefa caso o parâmetro passado seguir corretamente a formatação do domínio Data.
+            /// @param - Data inicio
+            /// @throw - invalid_argument : se o valor passado não cumprir as regras de formatação
             void setInicio(const Data&);
+            /// @brief Retorna a data de início da Tarefa.
+            /// @return - Data inicio
             Data getInicio() const;
 
+            /// @brief Armazena a data de término da Tarefa caso o parâmetro passado seguir corretamente a formatação do domínio Data.
+            /// @param - Data termino
+            /// @throw - invalid_argument : se o valor passado não cumprir as regras de formatação
             void setTermino(const Data&);
+
+            /// @brief Retorna a data de término da Tarefa.
+            /// @return - Data termino
             Data getTermino() const;
 
+            /// @brief Armazena a disciplina da Tarefa caso o parâmetro passado seguir corretamente a formatação do domínio Disciplina.
+            /// @param - Disciplina discipllina
+            /// @throw - invalid_argument : se o valor passado não cumprir as regras de formatação
             void setDisciplina(const Disciplina&);
+            /// @brief Retorna a disciplina da Tarefa.
+            /// @return - Disciplina disciplina
             Disciplina getDisciplina() const;
 };
 
@@ -69,7 +96,7 @@ inline Disciplina Tarefa::getDisciplina() const{
     return disciplina;
 }
 
-///Um projeto é um esforço temporário que tem como finalidade um resultado único e possui recursos delimitados; é identificado no sistema por um código, e possui um nome e uma descrição.
+///@brief Um projeto é um esforço temporário que tem como finalidade um resultado único e possui recursos delimitados; é identificado no sistema por um código, e possui um nome e uma descrição.
 class Projeto {
     private:
             Texto nome;
@@ -123,19 +150,36 @@ inline Texto Projeto::getDescricao() const{
     return descricao;
 }
 
+///@brief Usuários são agentes externos ao sistema que usufruem da tecnologia para realizar determinado projeto.
+///Cada usuário pode cadastrar uma conta informando nome, matrícula e senha.
 class Usuario {
     private:
             Nome nome;
             Matricula matricula;
             Senha senha;
     public:
+            /// @brief Armazena o nome do Usuário caso o parâmetro passado seguir corretamente a formatação do domínio Nome.
+            /// @param - Nome nome
+            /// @throw - invalid_argument : se o valor passado não cumprir as regras de formatação
             void setNome(const Nome&);
+            /// @brief Retorna o nome do Usuário.
+            /// @return - Nome nome
             Nome getNome() const;
 
+            /// @brief Armazena a matrícula do Usuário caso o parâmetro passado seguir corretamente a formatação do domínio Matricula.
+            /// @param - Matricula matricula
+            /// @throw - invalid_argument : se o valor passado não cumprir as regras de formatação
             void setMatricula(const Matricula&);
+            /// @brief Retorna a matrícula do Usuário.
+            /// @return - Matricula matricula
             Matricula getMatricula() const;
 
+            /// @brief Armazena a senha do Usuário caso o parâmetro passado seguir corretamente a formatação do domínio Senha.
+            /// @param - Senha senha
+            /// @throw - invalid_argument : se o valor passado não cumprir as regras de formatação
             void setSenha(const Senha&);
+            /// @brief Retorna a senha do Usuário.
+            /// @return - Senha senha
             Senha getSenha() const;
 };
 

@@ -1,38 +1,208 @@
 \hypertarget{classTarefa}{}\doxysection{Tarefa Class Reference}
 \label{classTarefa}\index{Tarefa@{Tarefa}}
+
+
+Entidade que representa um trabalho realizado de uma certa disciplina dentro de um prazo determinado.  
+
+
+
+
+{\ttfamily \#include $<$Entidades.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classTarefa_a17647ba6228393044a4d6c92ce4d21a9}\label{classTarefa_a17647ba6228393044a4d6c92ce4d21a9}} 
-void {\bfseries set\+Nome} (const \mbox{\hyperlink{classTexto}{Texto}} \&)
-\item 
-\mbox{\Hypertarget{classTarefa_a5484e09e36a1cbd845f768acb92150f1}\label{classTarefa_a5484e09e36a1cbd845f768acb92150f1}} 
-\mbox{\hyperlink{classTexto}{Texto}} {\bfseries get\+Nome} () const
-\item 
-\mbox{\Hypertarget{classTarefa_a05757b34adec051e78b5fd53bf8faf18}\label{classTarefa_a05757b34adec051e78b5fd53bf8faf18}} 
-void {\bfseries set\+Codigo} (const \mbox{\hyperlink{classCodigo}{Codigo}} \&)
-\item 
+void \mbox{\hyperlink{classTarefa_a17647ba6228393044a4d6c92ce4d21a9}{set\+Nome}} (const \mbox{\hyperlink{classTexto}{Texto}} \&)
+\begin{DoxyCompactList}\small\item\em Armazena o nome da \mbox{\hyperlink{classTarefa}{Tarefa}} caso o parâmetro passado seguir corretamente a formatação do domínio \mbox{\hyperlink{classTexto}{Texto}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTexto}{Texto}} \mbox{\hyperlink{classTarefa_a5484e09e36a1cbd845f768acb92150f1}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nome da \mbox{\hyperlink{classTarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTarefa_a05757b34adec051e78b5fd53bf8faf18}{set\+Codigo}} (const \mbox{\hyperlink{classCodigo}{Codigo}} \&)
+\begin{DoxyCompactList}\small\item\em Armazena o código da \mbox{\hyperlink{classTarefa}{Tarefa}} caso o parâmetro passado seguir corretamente a formatação do domínio Código. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCodigo}{Codigo}} \mbox{\hyperlink{classTarefa_aa54be3da2eb40e46d74bdb0dfc5f5a0d}{get\+Codigo}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o código da \mbox{\hyperlink{classTarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTarefa_a969072cd445a94df8154316a1f9d66ac}{set\+Inicio}} (const \mbox{\hyperlink{classData}{Data}} \&)
+\begin{DoxyCompactList}\small\item\em Armazena a data de início da \mbox{\hyperlink{classTarefa}{Tarefa}} caso o parâmetro passado seguir corretamente a formatação do domínio \mbox{\hyperlink{classData}{Data}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classData}{Data}} \mbox{\hyperlink{classTarefa_a842c1b965f8c6b48c69b04a32e742367}{get\+Inicio}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a data de início da \mbox{\hyperlink{classTarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTarefa_a855d6b359620ac2bc05c88d66d8d91d6}{set\+Termino}} (const \mbox{\hyperlink{classData}{Data}} \&)
+\begin{DoxyCompactList}\small\item\em Armazena a data de término da \mbox{\hyperlink{classTarefa}{Tarefa}} caso o parâmetro passado seguir corretamente a formatação do domínio \mbox{\hyperlink{classData}{Data}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classData}{Data}} \mbox{\hyperlink{classTarefa_ae0b637455d55b09635754621515a65a4}{get\+Termino}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a data de término da \mbox{\hyperlink{classTarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTarefa_ac1e472d1970ab114757027c8dda117be}{set\+Disciplina}} (const \mbox{\hyperlink{classDisciplina}{Disciplina}} \&)
+\begin{DoxyCompactList}\small\item\em Armazena a disciplina da \mbox{\hyperlink{classTarefa}{Tarefa}} caso o parâmetro passado seguir corretamente a formatação do domínio \mbox{\hyperlink{classDisciplina}{Disciplina}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDisciplina}{Disciplina}} \mbox{\hyperlink{classTarefa_ae8a24081bb538a65a23eb388219f5325}{get\+Disciplina}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a disciplina da \mbox{\hyperlink{classTarefa}{Tarefa}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Entidade que representa um trabalho realizado de uma certa disciplina dentro de um prazo determinado. 
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classTarefa_aa54be3da2eb40e46d74bdb0dfc5f5a0d}\label{classTarefa_aa54be3da2eb40e46d74bdb0dfc5f5a0d}} 
-\mbox{\hyperlink{classCodigo}{Codigo}} {\bfseries get\+Codigo} () const
-\item 
-\mbox{\Hypertarget{classTarefa_a969072cd445a94df8154316a1f9d66ac}\label{classTarefa_a969072cd445a94df8154316a1f9d66ac}} 
-void {\bfseries set\+Inicio} (const \mbox{\hyperlink{classData}{Data}} \&)
-\item 
-\mbox{\Hypertarget{classTarefa_a842c1b965f8c6b48c69b04a32e742367}\label{classTarefa_a842c1b965f8c6b48c69b04a32e742367}} 
-\mbox{\hyperlink{classData}{Data}} {\bfseries get\+Inicio} () const
-\item 
-\mbox{\Hypertarget{classTarefa_a855d6b359620ac2bc05c88d66d8d91d6}\label{classTarefa_a855d6b359620ac2bc05c88d66d8d91d6}} 
-void {\bfseries set\+Termino} (const \mbox{\hyperlink{classData}{Data}} \&)
-\item 
-\mbox{\Hypertarget{classTarefa_ae0b637455d55b09635754621515a65a4}\label{classTarefa_ae0b637455d55b09635754621515a65a4}} 
-\mbox{\hyperlink{classData}{Data}} {\bfseries get\+Termino} () const
-\item 
-\mbox{\Hypertarget{classTarefa_ac1e472d1970ab114757027c8dda117be}\label{classTarefa_ac1e472d1970ab114757027c8dda117be}} 
-void {\bfseries set\+Disciplina} (const \mbox{\hyperlink{classDisciplina}{Disciplina}} \&)
-\item 
+\index{Tarefa@{Tarefa}!getCodigo@{getCodigo}}
+\index{getCodigo@{getCodigo}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getCodigo()}{getCodigo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCodigo}{Codigo}} Tarefa\+::get\+Codigo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o código da \mbox{\hyperlink{classTarefa}{Tarefa}}. 
+
+\begin{DoxyReturn}{Returns}
+-\/ \mbox{\hyperlink{classCodigo}{Codigo}} codigo 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classTarefa_ae8a24081bb538a65a23eb388219f5325}\label{classTarefa_ae8a24081bb538a65a23eb388219f5325}} 
-\mbox{\hyperlink{classDisciplina}{Disciplina}} {\bfseries get\+Disciplina} () const
-\end{DoxyCompactItemize}
+\index{Tarefa@{Tarefa}!getDisciplina@{getDisciplina}}
+\index{getDisciplina@{getDisciplina}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getDisciplina()}{getDisciplina()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDisciplina}{Disciplina}} Tarefa\+::get\+Disciplina (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a disciplina da \mbox{\hyperlink{classTarefa}{Tarefa}}. 
+
+\begin{DoxyReturn}{Returns}
+-\/ \mbox{\hyperlink{classDisciplina}{Disciplina}} disciplina 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTarefa_a842c1b965f8c6b48c69b04a32e742367}\label{classTarefa_a842c1b965f8c6b48c69b04a32e742367}} 
+\index{Tarefa@{Tarefa}!getInicio@{getInicio}}
+\index{getInicio@{getInicio}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getInicio()}{getInicio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classData}{Data}} Tarefa\+::get\+Inicio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a data de início da \mbox{\hyperlink{classTarefa}{Tarefa}}. 
+
+\begin{DoxyReturn}{Returns}
+-\/ \mbox{\hyperlink{classData}{Data}} inicio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTarefa_a5484e09e36a1cbd845f768acb92150f1}\label{classTarefa_a5484e09e36a1cbd845f768acb92150f1}} 
+\index{Tarefa@{Tarefa}!getNome@{getNome}}
+\index{getNome@{getNome}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTexto}{Texto}} Tarefa\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o nome da \mbox{\hyperlink{classTarefa}{Tarefa}}. 
+
+\begin{DoxyReturn}{Returns}
+-\/ \mbox{\hyperlink{classTexto}{Texto}} nome 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTarefa_ae0b637455d55b09635754621515a65a4}\label{classTarefa_ae0b637455d55b09635754621515a65a4}} 
+\index{Tarefa@{Tarefa}!getTermino@{getTermino}}
+\index{getTermino@{getTermino}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getTermino()}{getTermino()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classData}{Data}} Tarefa\+::get\+Termino (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a data de término da \mbox{\hyperlink{classTarefa}{Tarefa}}. 
+
+\begin{DoxyReturn}{Returns}
+-\/ \mbox{\hyperlink{classData}{Data}} termino 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTarefa_a05757b34adec051e78b5fd53bf8faf18}\label{classTarefa_a05757b34adec051e78b5fd53bf8faf18}} 
+\index{Tarefa@{Tarefa}!setCodigo@{setCodigo}}
+\index{setCodigo@{setCodigo}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{setCodigo()}{setCodigo()}}
+{\footnotesize\ttfamily void Tarefa\+::set\+Codigo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCodigo}{Codigo}} \&}]{codigo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Armazena o código da \mbox{\hyperlink{classTarefa}{Tarefa}} caso o parâmetro passado seguir corretamente a formatação do domínio Código. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \mbox{\hyperlink{classCodigo}{Codigo}} codigo \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em -\/} & invalid\+\_\+argument \+: se o valor passado não cumprir as regras de formatação \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classTarefa_ac1e472d1970ab114757027c8dda117be}\label{classTarefa_ac1e472d1970ab114757027c8dda117be}} 
+\index{Tarefa@{Tarefa}!setDisciplina@{setDisciplina}}
+\index{setDisciplina@{setDisciplina}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{setDisciplina()}{setDisciplina()}}
+{\footnotesize\ttfamily void Tarefa\+::set\+Disciplina (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDisciplina}{Disciplina}} \&}]{disciplina }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Armazena a disciplina da \mbox{\hyperlink{classTarefa}{Tarefa}} caso o parâmetro passado seguir corretamente a formatação do domínio \mbox{\hyperlink{classDisciplina}{Disciplina}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \mbox{\hyperlink{classDisciplina}{Disciplina}} discipllina \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em -\/} & invalid\+\_\+argument \+: se o valor passado não cumprir as regras de formatação \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classTarefa_a969072cd445a94df8154316a1f9d66ac}\label{classTarefa_a969072cd445a94df8154316a1f9d66ac}} 
+\index{Tarefa@{Tarefa}!setInicio@{setInicio}}
+\index{setInicio@{setInicio}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{setInicio()}{setInicio()}}
+{\footnotesize\ttfamily void Tarefa\+::set\+Inicio (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classData}{Data}} \&}]{inicio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Armazena a data de início da \mbox{\hyperlink{classTarefa}{Tarefa}} caso o parâmetro passado seguir corretamente a formatação do domínio \mbox{\hyperlink{classData}{Data}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \mbox{\hyperlink{classData}{Data}} inicio \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em -\/} & invalid\+\_\+argument \+: se o valor passado não cumprir as regras de formatação \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classTarefa_a17647ba6228393044a4d6c92ce4d21a9}\label{classTarefa_a17647ba6228393044a4d6c92ce4d21a9}} 
+\index{Tarefa@{Tarefa}!setNome@{setNome}}
+\index{setNome@{setNome}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Tarefa\+::set\+Nome (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTexto}{Texto}} \&}]{nome }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Armazena o nome da \mbox{\hyperlink{classTarefa}{Tarefa}} caso o parâmetro passado seguir corretamente a formatação do domínio \mbox{\hyperlink{classTexto}{Texto}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \mbox{\hyperlink{classTexto}{Texto}} nome \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em -\/} & invalid\+\_\+argument \+: se o valor passado não cumprir as regras de formatação \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classTarefa_a855d6b359620ac2bc05c88d66d8d91d6}\label{classTarefa_a855d6b359620ac2bc05c88d66d8d91d6}} 
+\index{Tarefa@{Tarefa}!setTermino@{setTermino}}
+\index{setTermino@{setTermino}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{setTermino()}{setTermino()}}
+{\footnotesize\ttfamily void Tarefa\+::set\+Termino (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classData}{Data}} \&}]{termino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Armazena a data de término da \mbox{\hyperlink{classTarefa}{Tarefa}} caso o parâmetro passado seguir corretamente a formatação do domínio \mbox{\hyperlink{classData}{Data}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \mbox{\hyperlink{classData}{Data}} termino \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em -\/} & invalid\+\_\+argument \+: se o valor passado não cumprir as regras de formatação \\
+\hline
+\end{DoxyExceptions}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

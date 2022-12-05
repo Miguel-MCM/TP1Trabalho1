@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "cdgimnpstuv",
   1: "cdmnpstu",
-  2: "dgins",
+  2: "gis",
   3: "v"
 };
 

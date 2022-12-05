@@ -202,20 +202,6 @@ void Data::validar(string data) {
     throw invalid_argument("Argumento invalido: data invalida " + data);
 }
 
-Data::Data(string data) {
-    this->setValor(data);
-}
-
-Data::Data(string dia, string mes, string ano) {
-    string data = dia + BARRA + mes + BARRA + ano;
-    this->setValor(data);
-}
-
-Data::Data(int dia, int mes, int ano) {
-    string data = formatarInt(dia, 2) + BARRA + formatarInt(mes, 2) + BARRA + formatarInt(ano, 2);
-    this->setValor(data);
-}
-
 int Data::incrFeb(string data) {
     if (stoi(getMes(data)) != 2)
         return 0;
@@ -230,7 +216,7 @@ bool Data::isLeapYear(int ano) {
     return ano % 400 == 0 || (ano % 4 == 0 && ano % 100 != 0);
 }
 
-int Data::isLeapYear(string data) {
+bool Data::isLeapYear(string data) {
     return isLeapYear(calcAno(stoi(getAno(data))));
 }
 
