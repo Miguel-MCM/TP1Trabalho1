@@ -1,39 +1,83 @@
 #include <iostream>
 #include <math.h>
 #include "Dominios.h"
+#include "TestesUnidade.h"
 
 using namespace std;
 
 int main()
 {
-    Texto a;
-    a.setValor("1234567890- ? ! ");
-    cout << a.getValor();
+    TUDisciplina t_u_disciplina;
+    cout << "Teste Unidade Disciplina: ";
+    if (t_u_disciplina.run())
+        cout << "\tSUCESSO." << endl;
+    else
+        cout << "\tFRACASSO" << endl;
 
-    Codigo m = Codigo();
-    m.setValor("12016112273");
-    cout << m.getValor();
+    TUTexto t_u_texto;
+    cout << "Teste Unidade Texto:\t ";
+    if (t_u_texto.run())
+        cout << "\tSUCESSO." << endl;
+    else
+        cout << "\tFRACASSO" << endl;
 
-        // Data::calendario(2, 17);
-    Data * data = new Data(23, 04, 03);
-    cout << data-> getValor() << endl << endl;
-    int MESES[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    int dias = 0;
-    int incr = 0;
-    for (int i = 1; i < 2100; i++) {
-        for (int j = 1; j < 13; j++) {
-            if (j == 2)
-                incr = Data::isLeapYear(i);
-            else
-                incr = 0;
-            for (int k = 1; k <= MESES[j - 1] + incr; k++) {
-                dias++;
-            }
-        }
-    }
+    TUCodigo t_u_codigo;
+    cout << "Teste Unidade Codigo:\t";
+    if (t_u_codigo.run())
+        cout << "\tSUCESSO." << endl;
+    else
+        cout << "\tFRACASSO" << endl;
 
-    int dias_teste = round(365.242189 * 2099);
-    cout << "Dias reais: " << dias << endl << "Dias teste: " << dias_teste;
-    cout << endl << 365.242189 * 2099;
+    TUMatricula t_u_matricula;
+    cout << "Teste Unidade Matricula: ";
+    if (t_u_matricula.run())
+        cout << "\tSUCESSO." << endl;
+    else
+        cout << "\tFRACASSO" << endl;
+
+    TUSenha t_u_senha;
+    cout << "Teste Unidade Senha:\t";
+    if (t_u_senha.run())
+        cout << "\tSUCESSO." << endl;
+    else
+        cout << "\tFRACASSO" << endl;
+
+    TUData t_u_data;
+    cout << "Teste Unidade Data:\t";
+    if (t_u_data.run())
+        cout << "\tSUCESSO." << endl;
+    else
+        cout << "\tFRACASSO" << endl;
+
+    TUNome t_u_nome;
+    cout << "Teste Unidade Nome:\t";
+    if (t_u_nome.run())
+        cout << "\tSUCESSO." << endl;
+    else
+        cout << "\tFRACASSO" << endl;
+
+    cout << endl;
+
+    TUProjeto t_u_projeto;
+    cout << "Teste Unidade Projeto: \t";
+    if (t_u_projeto.run())
+        cout << "\tSUCESSO." << endl;
+    else
+        cout << "\tFRACASSO." << endl;
+
+     TUTarefa t_u_tarefa;
+    cout << "Teste Unidade Tarefa: \t";
+    if (t_u_tarefa.run())
+        cout << "\tSUCESSO." << endl;
+    else
+        cout << "\tFRACASSO." << endl;
+
+    TUUsuario t_u_usuario;
+    cout << "Teste Unidade Usuario: \t\t";
+    if (t_u_usuario.run())
+        cout << "SUCESSO." << endl;
+    else
+        cout << "FRACASSO." << endl;
+
     return 0;
 }
